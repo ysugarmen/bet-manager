@@ -1,0 +1,31 @@
+2025-02-06 12:10:51 | INFO | 🚀 Bet Manager is starting up...
+2025-02-06 12:10:51 | INFO | ✅ Bet Manager is ready to go!
+2025-02-06 20:09:41 | INFO | User Aa123456 logged in successfully
+2025-02-06 21:12:24 | INFO | User Aa123456 logged in successfully
+2025-02-07 15:27:08 | INFO | User Aa123456 logged in successfully
+2025-02-08 12:01:56 | INFO | User Aa123456 logged in successfully
+2025-02-09 11:57:05 | INFO | User Aa123456 logged in successfully
+2025-02-10 20:33:39 | INFO | User Aa123456 logged in successfully
+2025-02-10 21:32:26 | INFO | User Aa123456 logged in successfully
+2025-02-16 17:41:11 | INFO | User Aa123456 registered successfully
+2025-02-16 19:21:27 | INFO | User Aa123456 logged in successfully
+2025-02-16 19:26:55 | INFO | User Aa123456 logged in successfully
+2025-02-18 15:31:38 | INFO | User Aa123456 logged in successfully
+2025-02-18 17:30:14 | INFO | User Aa123456 logged in successfully
+2025-02-18 17:38:21 | INFO | User User2 registered successfully
+2025-02-18 17:38:34 | INFO | User User2 logged in successfully
+2025-02-19 18:36:06 | INFO | User Aa123456 logged in successfully
+2025-02-20 10:57:11 | INFO | User User3 registered successfully
+2025-02-20 10:57:32 | INFO | User User3 logged in successfully
+2025-02-20 11:24:55 | WARNING | User 6 does not have a budget for gameday "2025-02-19"
+2025-02-20 11:28:16 | WARNING | User 6 does not have a budget for gameday "2025-02-19"
+2025-02-20 12:53:09 | INFO | User User1 registered successfully
+2025-02-20 12:53:22 | INFO | User User1 logged in successfully
+2025-02-20 16:00:26 | INFO | User User1 registered successfully
+2025-02-20 16:00:38 | INFO | User User1 logged in successfully
+2025-02-24 12:06:05 | ERROR | Invalid login attempt for user User1
+2025-02-24 12:06:57 | INFO | User User1 registered successfully
+2025-02-24 12:07:06 | INFO | User User1 logged in successfully
+2025-02-26 10:58:21 | INFO | User User1 logged in successfully
+2025-02-26 12:35:25 | INFO | User User2 registered successfully
+2025-02-26 12:35:40 | INFO | User User2 logged in successfully
