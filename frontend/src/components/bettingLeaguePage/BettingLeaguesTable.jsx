@@ -17,7 +17,7 @@ export default function BettingLeaguesTable({ leagues, userLeagues, setUserLeagu
             // ✅ Update the userLeagues state after joining
             setUserLeagues((prev) => [...prev, leagueId]);
 
-            
+
             // Redirect user to the league landing page
             setTimeout(() => {
                 navigate(`/betting-leagues/${leagueId}`);
@@ -76,7 +76,7 @@ export default function BettingLeaguesTable({ leagues, userLeagues, setUserLeagu
                     ) : (
                         <TableRow>
                             <TableCell colSpan={4} align="center">
-                                No leagues found 
+                                No leagues found
                             </TableCell>
                         </TableRow>
                     )}

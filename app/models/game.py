@@ -6,9 +6,8 @@ from app.schemas.game import GameState
 from datetime import datetime, timedelta
 
 
-
 class Game(Base):
-    __tablename__ = 'games'
+    __tablename__ = "games"
 
     id = Column(Integer, primary_key=True, index=True)
     stage = Column(String, nullable=True)
@@ -26,32 +25,35 @@ class Game(Base):
     draw_odds = Column(Float, nullable=True)
 
     # Relationships
-    #bets = relationship("Bet", back_populates="game")
-
+    # bets = relationship("Bet", back_populates="game")
 
     def __repr__(self):
-        return f"<Game(id={self.id}, {self.team1} vs {self.team2} at {self.match_time})>"
-    
+        return (
+            f"<Game(id={self.id}, {self.team1} vs {self.team2} at {self.match_time})>"
+        )
+
     @classmethod
     def get_by_team_names(cls, db: Session, team1: str, team2: str):
         """
         Retrieve a game by team names (regardless of order).
         """
-        return db.query(cls).filter(
-            and_(
-                (cls.team1 == team1) & (cls.team2 == team2) |
-                (cls.team1 == team2) & (cls.team2 == team1)
+        return (
+            db.query(cls)
+            .filter(
+                and_(
+                    (cls.team1 == team1) & (cls.team2 == team2)
+                    | (cls.team1 == team2) & (cls.team2 == team1)
+                )
             )
-        ).first()
-    
+            .first()
+        )
+
     @classmethod
     def get_all(cls, db: Session):
         """
         Retrieve all games.
         """
         return db.query(Game).order_by(Game.match_time).all()
-        
-
 
     @classmethod
     def get_by_id(cls, db: Session, game_id: int):
@@ -59,7 +61,7 @@ class Game(Base):
         Retrieve a game by id.
         """
         return db.query(cls).filter(cls.id == game_id).first()
-    
+
     @classmethod
     def get_by_date(cls, db: Session, target_date: str):
         """Retrieve all games for a given date."""
@@ -74,7 +76,7 @@ class Game(Base):
             db.commit()
             return True
         return False
-    
+
     @classmethod
     def detirmine_game_winner(cls, score_team1: int, score_team2: int):
         """Determine the game result based on the scores."""
@@ -88,13 +90,17 @@ class Game(Base):
             return "X"
         else:
             return None
-        
+
     def update_game_state(self):
         current_time = datetime.now()
         game_starting_time = self.match_time
         if current_time < game_starting_time:
             self.game_state = GameState.upcoming
-        elif game_starting_time < current_time < (game_starting_time + timedelta(minutes=settings.GAME_STANSDART_LENGTH)):
+        elif (
+            game_starting_time
+            < current_time
+            < (game_starting_time + timedelta(minutes=settings.GAME_STANSDART_LENGTH))
+        ):
             self.game_state = GameState.ongoing
         else:
             self.game_state = GameState.history

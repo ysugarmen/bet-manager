@@ -17,7 +17,7 @@ function UserPointsDisplay( userId ) {
           setLoading(false);
         }
       };
-  
+
       if (userId) {
         fetchUserPoints();
       }

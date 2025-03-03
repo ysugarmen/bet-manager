@@ -13,9 +13,7 @@ from app.utils.scraper import (
     update_scores_from_web,
 )
 
-router = APIRouter(
-    prefix="/games"
-)
+router = APIRouter(prefix="/games")
 logger = get_logger("router.game")
 
 
@@ -35,18 +33,20 @@ def get_all_games(db: Session = Depends(get_db)):
 def get_upcoming_games_by_date(date: str, db: Session = Depends(get_db)):
     """Retrieve only upcoming games for a specific date."""
     logger.info(f"🔍 Fetching upcoming games for {date}")
-    
+
     try:
         target_date = datetime.strptime(date, "%Y-%m-%d").date()
     except ValueError:
         logger.error(f"❌ Invalid date format: {date}")
-        raise HTTPException(status_code=400, detail="Invalid date format. Expected YYYY-MM-DD.")
+        raise HTTPException(
+            status_code=400, detail="Invalid date format. Expected YYYY-MM-DD."
+        )
 
     games = (
         db.query(Game)
         .filter(
             cast(Game.match_time, Date) == target_date,  # Match the date
-            Game.game_state == "upcoming"  # Only fetch upcoming games
+            Game.game_state == "upcoming",  # Only fetch upcoming games
         )
         .order_by(Game.match_time)
         .all()
@@ -121,7 +121,6 @@ def update_scores_by_date(target_date: str, db: Session = Depends(get_db)):
     return {"message": f"Scores updated for {target_date}"}
 
 
-
 @router.get("/by-date/{date}", response_model=List[GameResponse])
 def get_games_by_date(date: str, db: Session = Depends(get_db)):
     """Retrieve all games for a specific date."""
@@ -130,11 +129,15 @@ def get_games_by_date(date: str, db: Session = Depends(get_db)):
         target_date = datetime.strptime(date, "%Y-%m-%d").date()
     except ValueError:
         logger.error(f"❌ Invalid date format: {date}")
-        raise HTTPException(status_code=400, detail="Invalid date format. Expected YYYY-MM-DD.")
+        raise HTTPException(
+            status_code=400, detail="Invalid date format. Expected YYYY-MM-DD."
+        )
 
     games = (
         db.query(Game)
-        .filter(cast(Game.match_time, Date) == target_date)  # Correct way to filter by date
+        .filter(
+            cast(Game.match_time, Date) == target_date
+        )  # Correct way to filter by date
         .order_by(Game.match_time)
         .all()
     )
@@ -159,11 +162,12 @@ def get_game_dates(db: Session = Depends(get_db)):
     logger.info(f"✅ Found {len(unique_dates)} upcoming game dates")
     return unique_dates
 
+
 @router.get("/upcoming/dates", response_model=List[str])
 def get_upcoming_game_dates(db: Session = Depends(get_db)):
     """Retrieve only dates that have upcoming games."""
     logger.info("🔍 Fetching dates with upcoming games")
-    
+
     dates = (
         db.query(func.date(Game.match_time))
         .filter(Game.game_state == "upcoming")  # ✅ Only fetch dates with upcoming games

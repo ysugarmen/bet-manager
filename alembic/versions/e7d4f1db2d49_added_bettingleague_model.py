@@ -1,7 +1,7 @@
 """Added BettingLeague model
 
 Revision ID: e7d4f1db2d49
-Revises: 
+Revises:
 Create Date: 2025-02-23 09:45:32.141782
 
 """
@@ -12,7 +12,7 @@ import sqlalchemy as sa
 
 
 # revision identifiers, used by Alembic.
-revision: str = 'e7d4f1db2d49'
+revision: str = "e7d4f1db2d49"
 down_revision: Union[str, None] = None
 branch_labels: Union[str, Sequence[str], None] = None
 depends_on: Union[str, Sequence[str], None] = None

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Box, CssBaseline, Typography, Toolbar, Grid, Paper, CircularProgress } from "@mui/material";
 import NavbarDrawer from "../components/general/NavbarDrawer";
-import BetCard from "../components/betsPage/BetCard";  
+import BetCard from "../components/betsPage/BetCard";
 import apiClient from "../api/apiClient";
 
 const BetsHistoryPage = () => {

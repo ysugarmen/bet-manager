@@ -10,21 +10,29 @@ from app.utils.database import get_db
 # Password hashing
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
+
 def verify_password(plain_password: str, hashed_password: str) -> bool:
     """Verify if the provided password matches the hashed password."""
     return pwd_context.verify(plain_password, hashed_password)
+
 
 def get_password_hash(password: str) -> str:
     """Hash a password securely."""
     return pwd_context.hash(password)
 
-def create_access_token(user_id: int, expires_delta: timedelta = timedelta(hours=24)) -> str:
+
+def create_access_token(
+    user_id: int, expires_delta: timedelta = timedelta(hours=24)
+) -> str:
     """Generate a JWT token for the user."""
     expire = datetime.utcnow() + expires_delta
     payload = {"sub": str(user_id), "exp": expire}
     return jwt.encode(payload, settings.SECRET_KEY, algorithm=settings.ALGORITHM)
 
-def get_current_user(token: str = Depends(settings.oauth2_scheme), db: Session = Depends(get_db)) -> User:
+
+def get_current_user(
+    token: str = Depends(settings.oauth2_scheme), db: Session = Depends(get_db)
+) -> User:
     """Retrieve the current user from the JWT token."""
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
@@ -33,7 +41,9 @@ def get_current_user(token: str = Depends(settings.oauth2_scheme), db: Session =
     )
 
     try:
-        payload = jwt.decode(token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM])
+        payload = jwt.decode(
+            token, settings.SECRET_KEY, algorithms=[settings.ALGORITHM]
+        )
         user_id: str = payload.get("sub")
         if user_id is None:
             raise credentials_exception

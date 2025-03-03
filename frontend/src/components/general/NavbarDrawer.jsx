@@ -128,7 +128,7 @@ const NavbarDrawer = ({ open, toggleDrawer }) => {
             </List>
           </Collapse>
         </List>
-        
+
         {/* Logout Button at the Bottom */}
         <List sx={{ marginTop: "auto" }}>
           <ListItem button onClick={logout}>

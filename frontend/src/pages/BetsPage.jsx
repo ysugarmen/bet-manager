@@ -12,7 +12,7 @@ import {
 } from "@mui/material";
 import NavbarDrawer from "../components/general/NavbarDrawer";
 import PlaceBet from "../components/betsPage/PlaceBet";
-import BetCard from "../components/betsPage/BetCard";  
+import BetCard from "../components/betsPage/BetCard";
 import apiClient from "../api/apiClient";
 
 const BetsPage = () => {

@@ -13,7 +13,7 @@ import {
 import LooksOneIcon from "@mui/icons-material/LooksOne";
 import LooksTwoIcon from "@mui/icons-material/LooksTwo";
 import ClearIcon from "@mui/icons-material/Clear";
-import TEAM_LOGOS from "../../constants/TeamLogos"; 
+import TEAM_LOGOS from "../../constants/TeamLogos";
 import apiClient from "../../api/apiClient";
 
 const GameCard = ({ game, userBet, userId, gamedayBudget, onBetPlaced, onDeleteBet }) => {
@@ -37,7 +37,7 @@ const GameCard = ({ game, userBet, userId, gamedayBudget, onBetPlaced, onDeleteB
 
   const handleBetPlacement = async () => {
     if (!betChoice || betAmount <= 0) return;
-  
+
     try {
       let response;
       if (userBet) {
@@ -57,20 +57,20 @@ const GameCard = ({ game, userBet, userId, gamedayBudget, onBetPlaced, onDeleteB
           bet_amount: betAmount,
         });
       }
-  
+
       // Extract bet and updated budget
       const { bet, updated_budget } = response.data;
-  
+
       // Update the bets and budget in the parent component
       onBetPlaced(bet, updated_budget);
       setIsEditing(false); // ✅ Exit editing mode after placing bet
-  
+
     } catch (error) {
       console.error("Failed to place/edit bet:", error);
       alert("Failed to place or edit bet");
     }
   };
-  
+
   const handleDeleteBet = async () => {
     try {
       await apiClient.delete(`/bets/${userBet.id}`);
@@ -92,7 +92,7 @@ const GameCard = ({ game, userBet, userId, gamedayBudget, onBetPlaced, onDeleteB
             alt={`${game.team1} logo`}
             style={{ width: 40, height: 40 }}
           />
-          
+
           {/* VS */}
           <Typography variant="h6" sx={{ mx: 1 }}>vs</Typography>
 
@@ -156,7 +156,7 @@ const GameCard = ({ game, userBet, userId, gamedayBudget, onBetPlaced, onDeleteB
             </Stack>
 
             {/* ✅ Scrollable Bet Amount Slider */}
-            <Box sx={{ display: "flex", justifyContent: "center" }}> 
+            <Box sx={{ display: "flex", justifyContent: "center" }}>
               <Slider
                 value={betAmount}
                 onChange={(e, value) => setBetAmount(value)}

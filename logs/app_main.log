@@ -2540,8 +2540,8 @@
 LINE 1: ...ets_bet_choice, bets.bet_state AS bets_bet_state, bets.amoun...
                                                              ^
 
-[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward 
-FROM bets 
+[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward
+FROM bets
 WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 [parameters: {'user_id_1': 4, 'bet_state_1': 'upcoming'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
@@ -2551,8 +2551,8 @@ WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 LINE 1: ...ets_bet_choice, bets.bet_state AS bets_bet_state, bets.amoun...
                                                              ^
 
-[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward 
-FROM bets 
+[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward
+FROM bets
 WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 [parameters: {'user_id_1': 4, 'bet_state_1': 'upcoming'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
@@ -5465,8 +5465,8 @@ WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 LINE 3: WHERE bets.user_id = 5 AND bets.bet_state = 'editable'
                                                     ^
 
-[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward 
-FROM bets 
+[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward
+FROM bets
 WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 [parameters: {'user_id_1': 5, 'bet_state_1': 'editable'}]
 (Background on this error at: https://sqlalche.me/e/20/9h9h)
@@ -5477,8 +5477,8 @@ WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 LINE 3: WHERE bets.user_id = 5 AND bets.bet_state = 'editable'
                                                     ^
 
-[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward 
-FROM bets 
+[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward
+FROM bets
 WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 [parameters: {'user_id_1': 5, 'bet_state_1': 'editable'}]
 (Background on this error at: https://sqlalche.me/e/20/9h9h)
@@ -5492,8 +5492,8 @@ WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 LINE 3: WHERE bets.user_id = 5 AND bets.bet_state = 'editable'
                                                     ^
 
-[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward 
-FROM bets 
+[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward
+FROM bets
 WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 [parameters: {'user_id_1': 5, 'bet_state_1': 'editable'}]
 (Background on this error at: https://sqlalche.me/e/20/9h9h)
@@ -5504,8 +5504,8 @@ WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 LINE 3: WHERE bets.user_id = 5 AND bets.bet_state = 'editable'
                                                     ^
 
-[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward 
-FROM bets 
+[SQL: SELECT bets.id AS bets_id, bets.user_id AS bets_user_id, bets.game_id AS bets_game_id, bets.bet_choice AS bets_bet_choice, bets.bet_state AS bets_bet_state, bets.amount AS bets_amount, bets.reward AS bets_reward
+FROM bets
 WHERE bets.user_id = %(user_id_1)s AND bets.bet_state = %(bet_state_1)s]
 [parameters: {'user_id_1': 5, 'bet_state_1': 'editable'}]
 (Background on this error at: https://sqlalche.me/e/20/9h9h)
@@ -11094,8 +11094,8 @@ LINE 3: WHERE (users.betting_leagues LIKE '%' || '[2]'::JSON || '%')
                                      ^
 HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
 
-[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues 
-FROM users 
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues
+FROM users
 WHERE (users.betting_leagues LIKE '%%' || %(betting_leagues_1)s::JSON || '%%')]
 [parameters: {'betting_leagues_1': '[2]'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
@@ -11106,8 +11106,8 @@ LINE 3: WHERE (users.betting_leagues LIKE '%' || '[2]'::JSON || '%')
                                      ^
 HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
 
-[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues 
-FROM users 
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues
+FROM users
 WHERE (users.betting_leagues LIKE '%%' || %(betting_leagues_1)s::JSON || '%%')]
 [parameters: {'betting_leagues_1': '[2]'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
@@ -11134,8 +11134,8 @@ LINE 3: WHERE (users.betting_leagues LIKE '%' || '[2]'::JSON || '%')
                                      ^
 HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
 
-[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues 
-FROM users 
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues
+FROM users
 WHERE (users.betting_leagues LIKE '%%' || %(betting_leagues_1)s::JSON || '%%')]
 [parameters: {'betting_leagues_1': '[2]'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
@@ -11145,8 +11145,8 @@ LINE 3: WHERE (users.betting_leagues LIKE '%' || '[2]'::JSON || '%')
                                      ^
 HINT:  No operator matches the given name and argument types. You might need to add explicit type casts.
 
-[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues 
-FROM users 
+[SQL: SELECT users.id AS users_id, users.username AS users_username, users.email AS users_email, users.hashed_password AS users_hashed_password, users.created_at AS users_created_at, users.last_updated_at AS users_last_updated_at, users.points AS users_points, users.gameday_budget AS users_gameday_budget, users.betting_leagues AS users_betting_leagues
+FROM users
 WHERE (users.betting_leagues LIKE '%%' || %(betting_leagues_1)s::JSON || '%%')]
 [parameters: {'betting_leagues_1': '[2]'}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
@@ -12160,9 +12160,9 @@ email
 LINE 1: ...s.group_picture AS betting_leagues_group_picture, betting_le...
                                                              ^
 
-[SQL: SELECT betting_leagues.id AS betting_leagues_id, betting_leagues.name AS betting_leagues_name, betting_leagues.description AS betting_leagues_description, betting_leagues.manager_id AS betting_leagues_manager_id, betting_leagues.members AS betting_leagues_members, betting_leagues.posts AS betting_leagues_posts, betting_leagues.created_at AS betting_leagues_created_at, betting_leagues.public AS betting_leagues_public, betting_leagues.code AS betting_leagues_code, betting_leagues.group_picture AS betting_leagues_group_picture, betting_leagues.chat_messages AS betting_leagues_chat_messages 
-FROM betting_leagues 
-WHERE betting_leagues.id = %(id_1)s 
+[SQL: SELECT betting_leagues.id AS betting_leagues_id, betting_leagues.name AS betting_leagues_name, betting_leagues.description AS betting_leagues_description, betting_leagues.manager_id AS betting_leagues_manager_id, betting_leagues.members AS betting_leagues_members, betting_leagues.posts AS betting_leagues_posts, betting_leagues.created_at AS betting_leagues_created_at, betting_leagues.public AS betting_leagues_public, betting_leagues.code AS betting_leagues_code, betting_leagues.group_picture AS betting_leagues_group_picture, betting_leagues.chat_messages AS betting_leagues_chat_messages
+FROM betting_leagues
+WHERE betting_leagues.id = %(id_1)s
  LIMIT %(param_1)s]
 [parameters: {'id_1': 1, 'param_1': 1}]
 (Background on this error at: https://sqlalche.me/e/20/f405)
@@ -13147,3 +13147,243 @@ username
 2025-03-02 15:42:47 | INFO | 📡 GET /users/user - 200 - 0.01s
 2025-03-02 15:42:47 | INFO | 📡 GET /users/user - 200 - 0.01s
 2025-03-02 15:42:47 | INFO | 📡 GET /users/user - 200 - 0.00s
+2025-03-02 19:07:29 | INFO | 🚀 Bet Manager is starting up...
+2025-03-02 19:07:29 | INFO | ✅ Bet Manager is ready to go!
+2025-03-02 19:07:29 | INFO | 🚀 Fetching initial games on startup
+2025-03-02 19:07:29 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:07:30 | INFO | ⚠️ No new games found
+2025-03-02 19:07:30 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-02 19:07:30 | INFO | 🔄 Running scheduled game update
+2025-03-02 19:07:30 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:07:32 | INFO | ⚠️ No new games found
+2025-03-02 19:07:33 | INFO | ✅ Scheduled game update completed
+2025-03-02 19:07:44 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-02 19:07:44 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-02 19:07:44 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-02 19:07:44 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-02 19:07:44 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-02 19:07:44 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:07:44 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:07:44 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.15s
+2025-03-02 19:07:44 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.15s
+2025-03-02 19:07:44 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.02s
+2025-03-02 19:07:44 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.01s
+2025-03-02 19:07:44 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:07:44 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.02s
+2025-03-02 19:07:44 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.02s
+2025-03-02 19:07:45 | INFO | 📡 GET /users/2/points - 200 - 0.06s
+2025-03-02 19:07:57 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:07:58 | INFO | 📡 GET /users/2/points - 200 - 0.00s
+2025-03-02 19:07:59 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:08:02 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:08:08 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:08:12 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:09:14 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-02 19:09:14 | INFO | 📡 GET /users/2/gameday_budget/2025-03-04 - 200 - 0.02s
+2025-03-02 19:09:14 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.03s
+2025-03-02 19:09:14 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.05s
+2025-03-02 19:09:14 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.18s
+2025-03-02 19:09:16 | INFO | 📡 GET /users/2/points - 200 - 0.04s
+2025-03-02 19:09:17 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.06s
+2025-03-02 19:09:17 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.07s
+2025-03-02 19:09:17 | INFO | 📡 GET /users/2/points - 200 - 0.13s
+2025-03-02 19:09:17 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.07s
+2025-03-02 19:09:17 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.06s
+2025-03-02 19:09:17 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.11s
+2025-03-02 19:09:17 | INFO | 📡 GET /users/2/points - 200 - 0.08s
+2025-03-02 19:09:17 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.03s
+2025-03-02 19:09:17 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:09:32 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:09:33 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-02 19:09:33 | INFO | 📡 GET /betting-leagues/public - 200 - 0.02s
+2025-03-02 19:09:34 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-02 19:09:34 | INFO | 📡 GET /betting-leagues/public - 200 - 0.02s
+2025-03-02 19:09:35 | INFO | 📡 GET /betting-leagues/3/chat - 200 - 0.01s
+2025-03-02 19:09:35 | INFO | 📡 GET /betting-leagues/3 - 200 - 0.01s
+2025-03-02 19:09:35 | INFO | 📡 GET /betting-leagues/3 - 200 - 0.02s
+2025-03-02 19:09:35 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-02 19:09:35 | INFO | 📡 GET /betting-leagues/3/chat - 200 - 0.02s
+2025-03-02 19:09:35 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-02 19:22:38 | INFO | 🚀 Bet Manager is starting up...
+2025-03-02 19:22:38 | INFO | ✅ Bet Manager is ready to go!
+2025-03-02 19:22:38 | INFO | 🚀 Fetching initial games on startup
+2025-03-02 19:22:38 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:22:39 | INFO | ⚠️ No new games found
+2025-03-02 19:22:39 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-02 19:22:39 | INFO | 🔄 Running scheduled game update
+2025-03-02 19:22:39 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:22:40 | INFO | ⚠️ No new games found
+2025-03-02 19:22:41 | INFO | ✅ Scheduled game update completed
+2025-03-02 19:44:30 | INFO | 🚀 Bet Manager is starting up...
+2025-03-02 19:44:30 | INFO | ✅ Bet Manager is ready to go!
+2025-03-02 19:44:30 | INFO | 🚀 Fetching initial games on startup
+2025-03-02 19:44:30 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:44:31 | INFO | ⚠️ No new games found
+2025-03-02 19:44:31 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-02 19:44:31 | INFO | 🔄 Running scheduled game update
+2025-03-02 19:44:31 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:44:32 | INFO | ⚠️ No new games found
+2025-03-02 19:44:33 | INFO | ✅ Scheduled game update completed
+2025-03-02 19:48:05 | INFO | 🚀 Bet Manager is starting up...
+2025-03-02 19:48:05 | INFO | ✅ Bet Manager is ready to go!
+2025-03-02 19:48:05 | INFO | 🚀 Fetching initial games on startup
+2025-03-02 19:48:05 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:48:08 | INFO | ⚠️ No new games found
+2025-03-02 19:48:08 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-02 19:48:08 | INFO | 🔄 Running scheduled game update
+2025-03-02 19:48:08 | INFO | 🔄 Fetching all games from web
+2025-03-02 19:48:11 | INFO | ⚠️ No new games found
+2025-03-02 19:48:13 | INFO | ✅ Scheduled game update completed
+2025-03-02 19:48:18 | INFO | 📡 GET /users/user - 200 - 0.15s
+2025-03-02 19:48:18 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-02 19:48:18 | INFO | 📡 GET /users/user - 200 - 0.05s
+2025-03-02 19:48:18 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-02 19:48:18 | INFO | 📡 GET /users/2/points - 200 - 0.05s
+2025-03-02 19:48:18 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.24s
+2025-03-02 19:48:19 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.10s
+2025-03-02 19:48:19 | INFO | 📡 GET /users/2/points - 200 - 0.48s
+2025-03-02 19:48:19 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.56s
+2025-03-02 19:48:19 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:48:19 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.25s
+2025-03-02 19:48:19 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-02 19:48:19 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.08s
+2025-03-02 19:48:19 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.09s
+2025-03-02 19:48:19 | INFO | 📡 GET /users/2/points - 200 - 0.09s
+2025-03-02 19:48:33 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:48:35 | INFO | 📡 GET /users/2/points - 200 - 0.00s
+2025-03-02 19:48:37 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-02 19:48:37 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-02 19:48:37 | INFO | 📡 GET /betting-leagues/public - 200 - 0.03s
+2025-03-02 19:48:37 | INFO | 📡 GET /betting-leagues/public - 200 - 0.02s
+2025-03-02 19:48:55 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-02 19:48:55 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-02 19:48:55 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.02s
+2025-03-02 19:48:55 | INFO | 📡 GET /users/2/points - 200 - 0.04s
+2025-03-02 19:48:55 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-02 19:48:55 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.04s
+2025-03-02 19:48:55 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-02 19:48:55 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.03s
+2025-03-02 19:48:55 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-02 19:48:55 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.02s
+2025-03-02 19:49:05 | INFO | 📡 GET /users/2/points - 200 - 0.00s
+2025-03-02 19:49:08 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-02 19:49:08 | INFO | 📡 GET /betting-leagues/public - 200 - 0.01s
+2025-03-02 19:49:08 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-02 19:49:08 | INFO | 📡 GET /betting-leagues/public - 200 - 0.03s
+2025-03-02 19:49:21 | INFO | 📡 GET /betting-leagues/3/chat - 200 - 0.01s
+2025-03-02 19:49:21 | INFO | 📡 GET /betting-leagues/3 - 200 - 0.01s
+2025-03-02 19:49:21 | INFO | 📡 GET /betting-leagues/3 - 200 - 0.02s
+2025-03-02 19:49:21 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-02 19:49:21 | INFO | 📡 GET /betting-leagues/3/chat - 200 - 0.03s
+2025-03-02 19:49:21 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-02 19:49:34 | INFO | 📡 OPTIONS /betting-leagues/3/chat - 200 - 0.00s
+2025-03-02 19:49:34 | INFO | 📡 POST /betting-leagues/3/chat - 200 - 0.04s
+2025-03-02 19:49:39 | INFO | 📡 OPTIONS /betting-leagues/3/chat/1 - 200 - 0.00s
+2025-03-02 19:49:39 | INFO | 📡 DELETE /betting-leagues/3/chat/1 - 200 - 0.01s
+2025-03-02 21:59:20 | INFO | 🚀 Bet Manager is starting up...
+2025-03-02 21:59:20 | INFO | ✅ Bet Manager is ready to go!
+2025-03-02 21:59:20 | INFO | 🚀 Fetching initial games on startup
+2025-03-02 21:59:20 | INFO | 🔄 Fetching all games from web
+2025-03-02 21:59:22 | INFO | ⚠️ No new games found
+2025-03-02 21:59:22 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-02 21:59:22 | INFO | 🔄 Running scheduled game update
+2025-03-02 21:59:22 | INFO | 🔄 Fetching all games from web
+2025-03-02 21:59:23 | INFO | ⚠️ No new games found
+2025-03-02 21:59:24 | INFO | ✅ Scheduled game update completed
+2025-03-02 21:59:33 | INFO | 🚀 Bet Manager is starting up...
+2025-03-02 21:59:33 | INFO | ✅ Bet Manager is ready to go!
+2025-03-02 21:59:33 | INFO | 🚀 Fetching initial games on startup
+2025-03-02 21:59:33 | INFO | 🔄 Fetching all games from web
+2025-03-02 21:59:35 | INFO | ⚠️ No new games found
+2025-03-02 21:59:35 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-02 21:59:35 | INFO | 🔄 Running scheduled game update
+2025-03-02 21:59:35 | INFO | 🔄 Fetching all games from web
+2025-03-02 21:59:36 | INFO | ⚠️ No new games found
+2025-03-02 21:59:37 | INFO | ✅ Scheduled game update completed
+2025-03-02 21:59:40 | INFO | 🚀 Bet Manager is starting up...
+2025-03-02 21:59:40 | INFO | ✅ Bet Manager is ready to go!
+2025-03-02 21:59:40 | INFO | 🚀 Fetching initial games on startup
+2025-03-02 21:59:40 | INFO | 🔄 Fetching all games from web
+2025-03-02 21:59:41 | INFO | ⚠️ No new games found
+2025-03-02 21:59:41 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-02 21:59:41 | INFO | 🔄 Running scheduled game update
+2025-03-02 21:59:41 | INFO | 🔄 Fetching all games from web
+2025-03-03 12:24:07 | INFO | 🚀 Bet Manager is starting up...
+2025-03-03 12:24:07 | INFO | ✅ Bet Manager is ready to go!
+2025-03-03 12:24:07 | INFO | 🚀 Fetching initial games on startup
+2025-03-03 12:24:07 | INFO | 🔄 Fetching all games from web
+2025-03-03 12:24:09 | INFO | ⚠️ No new games found
+2025-03-03 12:24:09 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-03 12:24:09 | INFO | 🔄 Running scheduled game update
+2025-03-03 12:24:09 | INFO | 🔄 Fetching all games from web
+2025-03-03 12:24:10 | INFO | 📡 GET /users/user - 200 - 0.23s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/user - 200 - 0.15s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/2/points - 200 - 0.13s
+2025-03-03 12:24:10 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.17s
+2025-03-03 12:24:10 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.02s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/2/points - 200 - 0.10s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/user - 200 - 0.14s
+2025-03-03 12:24:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.27s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/2/points - 200 - 0.03s
+2025-03-03 12:24:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.06s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/2/points - 200 - 0.04s
+2025-03-03 12:24:10 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.06s
+2025-03-03 12:24:10 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-03 12:24:10 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.02s
+2025-03-03 12:24:10 | INFO | ⚠️ No new games found
+2025-03-03 12:24:11 | INFO | ✅ Scheduled game update completed
+2025-03-03 12:24:20 | INFO | 📡 GET /users/2/points - 200 - 0.00s
+2025-03-03 12:24:21 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-03 12:24:22 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:24:22 | INFO | 📡 GET /betting-leagues/public - 200 - 0.02s
+2025-03-03 12:24:22 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-03 12:24:22 | INFO | 📡 GET /betting-leagues/public - 200 - 0.02s
+2025-03-03 12:24:23 | INFO | 📡 GET /betting-leagues/3 - 200 - 0.01s
+2025-03-03 12:24:23 | INFO | 📡 GET /betting-leagues/3/chat - 200 - 0.01s
+2025-03-03 12:24:23 | INFO | 📡 GET /betting-leagues/3 - 200 - 0.03s
+2025-03-03 12:24:23 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:24:23 | INFO | 📡 GET /betting-leagues/3/chat - 200 - 0.02s
+2025-03-03 12:24:23 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/user - 200 - 0.11s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/user - 200 - 0.00s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-03 12:25:16 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-03 12:25:16 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.04s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-03 12:25:16 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-03 12:25:16 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.03s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-03 12:25:16 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.03s
+2025-03-03 12:25:16 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.01s
+2025-03-03 12:25:16 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-03 12:25:25 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-03 12:25:25 | INFO | 📡 GET /users/user - 200 - 0.08s
+2025-03-03 12:25:25 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:25:25 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:25:26 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-03 12:25:26 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.03s
+2025-03-03 12:25:26 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-03 12:25:26 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-03 12:25:26 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.02s
+2025-03-03 12:25:26 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.01s
+2025-03-03 12:25:26 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-03 12:25:26 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.01s
+2025-03-03 12:25:26 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.01s
+2025-03-03 12:25:26 | INFO | 📡 GET /users/2/points - 200 - 0.00s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-03 12:25:44 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-03 12:25:44 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.03s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-03 12:25:44 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.09s
+2025-03-03 12:25:44 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.11s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/2/points - 200 - 0.04s
+2025-03-03 12:25:44 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.04s
+2025-03-03 12:25:44 | INFO | 📡 GET /users/2/points - 200 - 0.08s
+2025-03-03 12:25:44 | INFO | 📡 GET /games/upcoming/by-date/2025-03-04 - 200 - 0.08s

@@ -18,18 +18,24 @@ logger = get_logger("router.betting_league")
 
 
 @router.post("/", response_model=BettingLeagueResponse)
-def create_betting_league(betting_league_request: BettingLeagueCreate, db: Session = Depends(get_db)):
+def create_betting_league(
+    betting_league_request: BettingLeagueCreate, db: Session = Depends(get_db)
+):
     """
     Create a new betting league.
     """
     logger.info(f"Creating a new betting league: {betting_league_request.name}")
-    manager = db.query(User).filter(User.id == betting_league_request.manager_id).first()
-    
+    manager = (
+        db.query(User).filter(User.id == betting_league_request.manager_id).first()
+    )
+
     if not manager:
         raise HTTPException(status_code=404, detail="Manager not found")
 
-    members = [{"id": manager.id, "username": manager.username, "points": manager.points}]
-    
+    members = [
+        {"id": manager.id, "username": manager.username, "points": manager.points}
+    ]
+
     new_league = BettingLeague(
         name=betting_league_request.name,
         description=betting_league_request.description,
@@ -48,6 +54,7 @@ def create_betting_league(betting_league_request: BettingLeagueCreate, db: Sessi
     logger.info(f"New betting league created: {new_league.name}")
     return new_league
 
+
 @router.get("/", response_model=list[BettingLeagueResponse])
 def get_all_betting_leagues(db: Session = Depends(get_db)):
     """
@@ -56,13 +63,14 @@ def get_all_betting_leagues(db: Session = Depends(get_db)):
     leagues = db.query(BettingLeague).all()
     if not leagues:
         raise HTTPException(status_code=404, detail="No betting leagues found")
-    
-    return [BettingLeagueResponse(
-        id=league.id,
-        name=league.name,
-        members=league.members,
-        code=league.code
-    ) for league in leagues]
+
+    return [
+        BettingLeagueResponse(
+            id=league.id, name=league.name, members=league.members, code=league.code
+        )
+        for league in leagues
+    ]
+
 
 @router.get("/public", response_model=list[BettingLeagueResponse])
 def get_all_public_betting_leagues(db: Session = Depends(get_db)):
@@ -73,7 +81,7 @@ def get_all_public_betting_leagues(db: Session = Depends(get_db)):
 
     if not leagues:
         raise HTTPException(status_code=404, detail="No public betting leagues found")
-    
+
     return [
         BettingLeagueResponse(
             id=league.id,
@@ -83,10 +91,11 @@ def get_all_public_betting_leagues(db: Session = Depends(get_db)):
             manager_id=league.manager_id,
             num_members=len(league.members),
             members=league.members,
-            code=league.code
+            code=league.code,
         )
         for league in leagues
     ]
+
 
 @router.get("/{league_id}", response_model=BettingLeagueResponse)
 def get_betting_league(league_id: int, db: Session = Depends(get_db)):
@@ -96,7 +105,7 @@ def get_betting_league(league_id: int, db: Session = Depends(get_db)):
     league = db.query(BettingLeague).filter(BettingLeague.id == league_id).first()
     if not league:
         raise HTTPException(status_code=404, detail="Betting league not found")
-    
+
     return BettingLeagueResponse(
         id=league.id,
         name=league.name,
@@ -104,7 +113,7 @@ def get_betting_league(league_id: int, db: Session = Depends(get_db)):
         manager_id=league.manager_id,
         members=league.members,
         num_members=len(league.members),
-        code=league.code
+        code=league.code,
     )
 
 
@@ -125,7 +134,7 @@ def get_league_by_code(league_code: str, db: Session = Depends(get_db)):
         manager_id=league.manager_id,
         members=league.members,
         num_members=len(league.members),
-        code=league.code
+        code=league.code,
     )
 
 
@@ -145,7 +154,9 @@ def delete_betting_league(league_id: int, db: Session = Depends(get_db)):
 
 
 @router.put("/{league_id}", response_model=BettingLeagueResponse)
-def update_betting_league(league_id: int, league_request: BettingLeagueCreate, db: Session = Depends(get_db)):
+def update_betting_league(
+    league_id: int, league_request: BettingLeagueCreate, db: Session = Depends(get_db)
+):
     """
     Update a specific betting league.
     """
@@ -165,7 +176,9 @@ def update_betting_league(league_id: int, league_request: BettingLeagueCreate, d
 
 
 @router.post("/{league_id}/join/{user_id}")
-def join_betting_league(league_id: int, user_id: int, code: str = None, db: Session = Depends(get_db)):
+def join_betting_league(
+    league_id: int, user_id: int, code: str = None, db: Session = Depends(get_db)
+):
     """
     Allows a user to join a public betting league without a code,
     and a private betting league with a code.
@@ -187,7 +200,9 @@ def join_betting_league(league_id: int, user_id: int, code: str = None, db: Sess
         raise HTTPException(status_code=400, detail="User already in league")
 
     # Update league members list
-    league.members.append({"id": user.id, "username": user.username, "points": user.points})
+    league.members.append(
+        {"id": user.id, "username": user.username, "points": user.points}
+    )
     flag_modified(league, "members")
     # Update user's betting leagues
     user.join_league(league, db)  # ✅ Pass `db` to ensure update is tracked
@@ -221,8 +236,9 @@ def leave_betting_league(league_id: int, user_id: int, db: Session = Depends(get
     db.add(league)
     db.add(user)
     db.commit()
-    
+
     return {"message": f"User {user.username} left league {league.name}"}
+
 
 @router.get("/{league_id}/leaderboard", response_model=list[UserResponse])
 def get_league_leaderboard(league_id: int, db: Session = Depends(get_db)):
@@ -234,7 +250,7 @@ def get_league_leaderboard(league_id: int, db: Session = Depends(get_db)):
 
     if not league:
         raise HTTPException(status_code=404, detail="League not found")
-    
+
     # Get the list of user IDs from the 'members' field (extracting 'id' from each member dictionary)
     member_ids = [member["id"] for member in league.members]
 
@@ -245,16 +261,17 @@ def get_league_leaderboard(league_id: int, db: Session = Depends(get_db)):
     users = sorted(users, key=lambda user: user.points, reverse=True)
 
     # Return a list of user objects with points and username
-    return [UserResponse(
-        id=user.id,
-        username=user.username,
-        points=user.points
-    ) for user in users]
+    return [
+        UserResponse(id=user.id, username=user.username, points=user.points)
+        for user in users
+    ]
 
 
 # Group chat routes
 @router.post("/{league_id}/chat", response_model=ChatMessageResponse)
-def send_chat_message(league_id: int, message_request: ChatMessageCreate, db: Session = Depends(get_db)):
+def send_chat_message(
+    league_id: int, message_request: ChatMessageCreate, db: Session = Depends(get_db)
+):
     """
     Send a message to the group chat of a specific betting league.
     """
@@ -273,7 +290,7 @@ def send_chat_message(league_id: int, message_request: ChatMessageCreate, db: Se
         "user_id": message_request.user_id,
         "username": user.username,
         "content": message_request.content,
-        "timestamp": datetime.utcnow().isoformat()
+        "timestamp": datetime.utcnow().isoformat(),
     }
     league.chat_messages.append(new_message)
     flag_modified(league, "chat_messages")
@@ -284,8 +301,9 @@ def send_chat_message(league_id: int, message_request: ChatMessageCreate, db: Se
         user_id=new_message["user_id"],
         username=new_message["username"],
         content=new_message["content"],
-        timestamp=new_message["timestamp"]
+        timestamp=new_message["timestamp"],
     )
+
 
 @router.get("/{league_id}/chat", response_model=list[ChatMessageResponse])
 def get_chat_messages(league_id: int, db: Session = Depends(get_db)):
@@ -297,16 +315,25 @@ def get_chat_messages(league_id: int, db: Session = Depends(get_db)):
         raise HTTPException(status_code=404, detail="League not found")
     if league.chat_messages is None:
         return []
-    return [ChatMessageResponse(
-        id=message["id"],
-        user_id=message["user_id"],
-        username=message["username"],
-        content=message["content"],
-        timestamp=message["timestamp"]
-    ) for message in league.chat_messages]
+    return [
+        ChatMessageResponse(
+            id=message["id"],
+            user_id=message["user_id"],
+            username=message["username"],
+            content=message["content"],
+            timestamp=message["timestamp"],
+        )
+        for message in league.chat_messages
+    ]
+
 
 @router.put("/{league_id}/chat/{message_id}", response_model=ChatMessageResponse)
-def update_chat_message(league_id: int, message_id: int, message_request: ChatMessageCreate, db: Session = Depends(get_db)):
+def update_chat_message(
+    league_id: int,
+    message_id: int,
+    message_request: ChatMessageCreate,
+    db: Session = Depends(get_db),
+):
     """
     Update a specific chat message in the group chat of a specific betting league.
     """
@@ -314,14 +341,17 @@ def update_chat_message(league_id: int, message_id: int, message_request: ChatMe
     if not league:
         raise HTTPException(status_code=404, detail="League not found")
 
-    chat_message = next((msg for msg in league.chat_messages if msg['id'] == message_id), None)
+    chat_message = next(
+        (msg for msg in league.chat_messages if msg["id"] == message_id), None
+    )
     if not chat_message:
         raise HTTPException(status_code=404, detail="Message not found")
 
-    chat_message['content'] = message_request.content
+    chat_message["content"] = message_request.content
     flag_modified(league, "chat_messages")
     db.commit()
     return chat_message
+
 
 @router.delete("/{league_id}/chat/{message_id}")
 def delete_chat_message(league_id: int, message_id: int, db: Session = Depends(get_db)):
@@ -332,10 +362,12 @@ def delete_chat_message(league_id: int, message_id: int, db: Session = Depends(g
     if not league:
         raise HTTPException(status_code=404, detail="League not found")
 
-    chat_message = next((msg for msg in league.chat_messages if msg['id'] == message_id), None)
+    chat_message = next(
+        (msg for msg in league.chat_messages if msg["id"] == message_id), None
+    )
     if not chat_message:
         raise HTTPException(status_code=404, detail="Message not found")
-    
+
     league.chat_messages.remove(chat_message)
     flag_modified(league, "chat_messages")
     db.commit()

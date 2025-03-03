@@ -5,24 +5,23 @@
     align-items: center;
     background: linear-gradient(to right, #28a745, #218838);
   }
-  
+
   .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.5s ease-in-out;
   }
-  
+
   .card-header {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
   .btn-success {
     background: #28a745;
     border: none;
   }
-  
+
   .btn-success:hover {
     background: #218838;
   }
-  

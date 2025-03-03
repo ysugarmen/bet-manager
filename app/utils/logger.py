@@ -21,7 +21,12 @@ def get_logger(module_name: str, log_level: str = "DEBUG"):
     log_instance = logger.bind(context=module_name)
 
     # Add file logging
-    log_instance.add(log_file, format=LOG_FORMAT, level=log_level, rotation="5 MB",
-                     filter=lambda record: record["extra"].get("context") == module_name)
+    log_instance.add(
+        log_file,
+        format=LOG_FORMAT,
+        level=log_level,
+        rotation="5 MB",
+        filter=lambda record: record["extra"].get("context") == module_name,
+    )
 
     return log_instance  # ✅ Return a valid logger instance

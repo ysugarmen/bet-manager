@@ -14,34 +14,49 @@ router = APIRouter(
 
 logger = get_logger("router.bet")
 
+
 @router.post("/", response_model=dict)
 def create_bet(bet_request: BetCreate, db: Session = Depends(get_db)):
     """
     Place a new bet and update the user's budget accordingly.
     """
-    logger.info(f"Creating a new bet for user {bet_request.user_id} on game {bet_request.game_id}")
+    logger.info(
+        f"Creating a new bet for user {bet_request.user_id} on game {bet_request.game_id}"
+    )
 
     user = db.query(User).filter(User.id == bet_request.user_id).first()
     game = db.query(Game).filter(Game.id == bet_request.game_id).first()
 
     if not game or not user:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User or Game not found")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User or Game not found"
+        )
 
     gameday = str(game.match_time.date())
 
     # Ensure user has a budget for the gameday
     if gameday not in user.gameday_budget:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="No budget allocated for this gameday")
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="No budget allocated for this gameday",
+        )
 
     if user.gameday_budget[gameday] < bet_request.bet_amount:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Not enough budget for this gameday")
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN,
+            detail="Not enough budget for this gameday",
+        )
 
     # Deduct budget
     budget_updated = user.update_gameday_budget(gameday, bet_request.bet_amount, db)
     if not budget_updated:
-        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Budget deduction failed")
+        raise HTTPException(
+            status_code=status.HTTP_403_FORBIDDEN, detail="Budget deduction failed"
+        )
 
-    updated_budget = user.gameday_budget[gameday]  # ✅ Now correctly defined after commit
+    updated_budget = user.gameday_budget[
+        gameday
+    ]  # ✅ Now correctly defined after commit
 
     # Create the new bet
     new_bet = Bet(
@@ -67,8 +82,9 @@ def create_bet(bet_request: BetCreate, db: Session = Depends(get_db)):
             "bet_choice": new_bet.bet_choice,
             "bet_amount": new_bet.amount,
         },
-        "updated_budget": updated_budget
+        "updated_budget": updated_budget,
     }
+
 
 @router.put("/{bet_id}", response_model=BetResponse)
 def update_bet(bet_id: int, bet_request: BetCreate, db: Session = Depends(get_db)):
@@ -82,16 +98,21 @@ def update_bet(bet_id: int, bet_request: BetCreate, db: Session = Depends(get_db
     user = db.query(User).filter(User.id == bet.user_id).first()
     game = db.query(Game).filter(Game.id == bet.game_id).first()
     if not bet or not user:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found"
+        )
     gameday = str(game.match_time.date())
     amount_diff = bet.amount - bet_request.bet_amount
     bet.amount = bet_request.bet_amount
     user.update_gameday_budget(gameday, -(amount_diff), db)
     bet.bet_choice = bet_request.bet_choice
     db.commit()
-    logger.info(f"✅ Bet {bet.id} updated. Remaining budget: {user.gameday_budget[gameday]} coins.")
+    logger.info(
+        f"✅ Bet {bet.id} updated. Remaining budget: {user.gameday_budget[gameday]} coins."
+    )
 
     return bet
+
 
 @router.get("/user/{user_id}/bets", response_model=List[BetResponse])
 def get_user_bets(user_id: int, db: Session = Depends(get_db)):
@@ -102,13 +123,16 @@ def get_user_bets(user_id: int, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         logger.error(f"User with id {user_id} not found")
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
+        )
     bets = user.bets
     for bet in bets:
         bet.update_state()
     db.commit()
     logger.info(f"Found {len(bets)} bets for user {user_id}")
     return bets
+
 
 @router.get("/user/{user_id}/bets/upcoming", response_model=List[BetResponse])
 def get_user_upcoming_bets(user_id: int, db: Session = Depends(get_db)):
@@ -119,18 +143,23 @@ def get_user_upcoming_bets(user_id: int, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         logger.error(f"User with id {user_id} not found")
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
-    upcoming_bets = db.query(Bet).filter(
-        Bet.user_id == user_id,
-        Bet.bet_state == BetState.editable
-    ).all()
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
+        )
+    upcoming_bets = (
+        db.query(Bet)
+        .filter(Bet.user_id == user_id, Bet.bet_state == BetState.editable)
+        .all()
+    )
     formatted_bets = [
         {
             "id": bet.id,
             "user_id": bet.user_id,
             "game_id": bet.game_id,
             "bet_choice": str(bet.bet_choice),  # Convert to string
-            "bet_amount": float(bet.amount) if bet.amount is not None else 0.0,  # Default to 0 if missing
+            "bet_amount": float(bet.amount)
+            if bet.amount is not None
+            else 0.0,  # Default to 0 if missing
         }
         for bet in upcoming_bets
     ]
@@ -148,11 +177,14 @@ def get_user_history_bets(user_id: int, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         logger.error(f"User with id {user_id} not found")
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="User not found")
-    history_bets = db.query(Bet).filter(
-        Bet.user_id == user_id,
-        Bet.bet_state == BetState.locked
-    ).all()
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
+        )
+    history_bets = (
+        db.query(Bet)
+        .filter(Bet.user_id == user_id, Bet.bet_state == BetState.locked)
+        .all()
+    )
     logger.info(f"Found {len(history_bets)} history bets for user {user_id}")
     return history_bets
 
@@ -166,7 +198,9 @@ def get_user_game_bet(user_id: int, game_id: int, db: Session = Depends(get_db))
     logger.info(f"Retrieving bet for user {user_id} for game {game_id}")
     bet = db.query(Bet).filter(Bet.user_id == user_id, Bet.game_id == game_id).first()
     if not bet:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found"
+        )
 
     bet.update_bet_state()
     db.commit()
@@ -182,11 +216,15 @@ def calculate_reward(bet_id: int, db: Session = Depends(get_db)):
     logger.info(f"Calculating reward for bet with id {bet_id}")
     bet = db.query(Bet).filter(Bet.id == bet_id).first()
     if not bet:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found"
+        )
 
     game = Game.get_by_id(db, bet.game_id)
     if not game.game_winner:
-        raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="Game has no result yet")
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST, detail="Game has no result yet"
+        )
 
     points = Bet.calculate_reward(game)
     bet.bet_state = BetState.history  # ✅ Mark as history when reward is assigned
@@ -205,9 +243,11 @@ def delete_bet(bet_id: int, db: Session = Depends(get_db)):
     user = db.query(User).filter(User.id == bet.user_id).first()
     game = db.query(Game).filter(Game.id == bet.game_id).first()
     if not bet or not user:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found")
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found"
+        )
     gameday = str(game.match_time.date())
-    user.update_gameday_budget(gameday, -(bet.amount), db) # Refund user
+    user.update_gameday_budget(gameday, -(bet.amount), db)  # Refund user
     db.delete(bet)
     db.commit()
     return {"message": "Bet deleted"}

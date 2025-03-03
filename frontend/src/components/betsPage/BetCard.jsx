@@ -18,7 +18,7 @@ const BetCard = ({ game, bet, showEdit = true }) => {
         <Box sx={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 2, mb: 1 }}>
           <Typography variant="body1">{game.team1}</Typography>
           <img src={team1Logo} alt={`${game.team1} logo`} style={{ width: 40, height: 40 }} />
-          
+
           <Typography variant="h6" sx={{ mx: 1 }}>vs</Typography>
 
           <img src={team2Logo} alt={`${game.team2} logo`} style={{ width: 40, height: 40 }} />

@@ -10,6 +10,7 @@ from app.models.betting_league import BettingLeague
 
 # ✅ Ensure metadata is created
 from app.utils.database import engine
+
 Base.metadata.create_all(bind=engine)
 
 __all__ = ["Base", "User", "Game", "Bet", "BettingLeague"]

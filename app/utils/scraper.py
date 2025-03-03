@@ -17,7 +17,9 @@ def fetch_games_from_web(db: Session, target_date: str = None):
     :param target_date: Date in 'YYYY-MM-DD' format (optional).
     :return: List of Game objects.
     """
-    logger.info(f"🔍 Fetching matches from FBRef for {target_date if target_date else 'all upcoming dates'}")
+    logger.info(
+        f"🔍 Fetching matches from FBRef for {target_date if target_date else 'all upcoming dates'}"
+    )
 
     response = requests.get(settings.CL_GAMES_SCRAPING_URL)
     if response.status_code != 200:
@@ -51,16 +53,28 @@ def fetch_games_from_web(db: Session, target_date: str = None):
                 team1_score, team2_score = map(int, score_text.split("–"))
             if target_date and date != target_date:
                 continue  # Skip games not on the target date
-            
+
             try:
-                match_datetime = datetime.strptime(f"{date} {start_time}", "%Y-%m-%d %H:%M")
+                match_datetime = datetime.strptime(
+                    f"{date} {start_time}", "%Y-%m-%d %H:%M"
+                )
             except ValueError:
-                logger.warning(f"⚠️ Skipping match with invalid date/time: {team1} vs {team2}")
+                logger.warning(
+                    f"⚠️ Skipping match with invalid date/time: {team1} vs {team2}"
+                )
                 continue
 
-            db_game = db.query(Game).filter(
-                and_(Game.team1 == team1, Game.team2 == team2, Game.match_time == match_datetime)
-            ).first()
+            db_game = (
+                db.query(Game)
+                .filter(
+                    and_(
+                        Game.team1 == team1,
+                        Game.team2 == team2,
+                        Game.match_time == match_datetime,
+                    )
+                )
+                .first()
+            )
             if db_game:
                 continue  # Skip games already in the database
 
@@ -70,11 +84,11 @@ def fetch_games_from_web(db: Session, target_date: str = None):
                 match_time=match_datetime,
                 score_team1=team1_score,
                 score_team2=team2_score,
-                game_winner = Game.detirmine_game_winner(team1_score, team2_score),
+                game_winner=Game.detirmine_game_winner(team1_score, team2_score),
                 stage=stage,
-                gameday=gameday
+                gameday=gameday,
             )
-            #game.update_game_state()
+            # game.update_game_state()
             games.append(game)
             logger.info(f"✅ Found {game.team1} vs {game.team2} on {game.match_time}")
 
@@ -88,7 +102,9 @@ def update_scores_from_web(db: Session, target_date: str = None):
     :param db: Database session.
     :param target_date: Date in 'YYYY-MM-DD' format (optional).
     """
-    logger.info(f"🔍 Updating match scores from FBRef for {target_date if target_date else 'all upcoming games'}")
+    logger.info(
+        f"🔍 Updating match scores from FBRef for {target_date if target_date else 'all upcoming games'}"
+    )
 
     response = requests.get(settings.CL_GAMES_SCRAPING_URL)
     if response.status_code != 200:
@@ -116,21 +132,35 @@ def update_scores_from_web(db: Session, target_date: str = None):
                 continue  # Skip games not on the target date
 
             try:
-                match_datetime = datetime.strptime(f"{date} {start_time}", "%Y-%m-%d %H:%M")
+                match_datetime = datetime.strptime(
+                    f"{date} {start_time}", "%Y-%m-%d %H:%M"
+                )
             except ValueError:
-                logger.warning(f"⚠️ Skipping match with invalid date/time: {team1} vs {team2}")
+                logger.warning(
+                    f"⚠️ Skipping match with invalid date/time: {team1} vs {team2}"
+                )
                 continue
 
-            game = db.query(Game).filter(
-                and_(Game.team1 == team1, Game.team2 == team2, Game.match_time == match_datetime)
-            ).first()
+            game = (
+                db.query(Game)
+                .filter(
+                    and_(
+                        Game.team1 == team1,
+                        Game.team2 == team2,
+                        Game.match_time == match_datetime,
+                    )
+                )
+                .first()
+            )
 
             if game and score_team1 is not None and score_team2 is not None:
                 game.score_team1 = int(score_team1)
                 game.score_team2 = int(score_team2)
                 db.add(game)
                 updated_count += 1
-                logger.info(f"✅ Updated score: {game.team1} {game.score_team1} - {game.score_team2} {game.team2}")
+                logger.info(
+                    f"✅ Updated score: {game.team1} {game.score_team1} - {game.score_team2} {game.team2}"
+                )
 
     db.commit()
     logger.info(f"✅ Updated {updated_count} match scores")
@@ -167,12 +197,12 @@ def fetch_betting_odds(db: Session):
         return
 
     logger.info("🔍 Fetching betting odds from ODDS API")
-    
+
     params = {
         "api_key": settings.BETTING_ODDS_API_KEY,
         "regions": "eu",
         "markets": "h2h",
-        "bookmakers": "unibet_eu"
+        "bookmakers": "unibet_eu",
     }
 
     try:
@@ -191,10 +221,11 @@ def fetch_betting_odds(db: Session):
             away_team = game_odds["away_team"]
 
             # Get the game from the database
-            db_game = db.query(Game).filter(
-                (Game.team1 == home_team) & 
-                (Game.team2 == away_team)
-            ).first()
+            db_game = (
+                db.query(Game)
+                .filter((Game.team1 == home_team) & (Game.team2 == away_team))
+                .first()
+            )
 
             if db_game:
                 # Extract odds

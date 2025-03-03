@@ -5,27 +5,27 @@
     align-items: center;
     background: linear-gradient(to right, #007bff, #6610f2);
   }
-  
+
   .card {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.5s ease-in-out;
   }
-  
+
   .card-header {
     font-size: 1.5rem;
     font-weight: bold;
   }
-  
+
   .btn-primary {
     background: #007bff;
     border: none;
   }
-  
+
   .btn-primary:hover {
     background: #0056b3;
   }
-  
+
   /* Fade-in animation */
   @keyframes fadeIn {
     from {
@@ -37,4 +37,3 @@
       transform: translateY(0);
     }
   }
-  

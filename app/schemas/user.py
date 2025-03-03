@@ -1,6 +1,7 @@
 from pydantic import BaseModel, EmailStr, Field, validator
 from typing import List, Optional
 
+
 class UserCreate(BaseModel):
     username: str = Field(
         ..., min_length=3, max_length=50, description="The username of the user"
@@ -31,8 +32,11 @@ class UserResponse(BaseModel):
     id: int = Field(..., description="The user's unique identifier.")
     username: str = Field(..., description="The username of the user.")
     email: Optional[EmailStr] = Field(None, description="The user's email address.")
-    betting_leagues: List[int] = Field(default=[], description="The user's betting leagues.")
+    betting_leagues: List[int] = Field(
+        default=[], description="The user's betting leagues."
+    )
     points: int = Field(default=0, description="The user's total points.")
+
     class Config:
         orm_mode = True
 
