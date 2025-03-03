@@ -1,5 +1,5 @@
 import os
-from pydantic_settings import BaseSettings
+from pydantic import BaseSettings
 from typing import ClassVar, Dict
 from fastapi.security import OAuth2PasswordBearer
 
