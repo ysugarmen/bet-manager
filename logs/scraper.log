@@ -12372,3 +12372,723 @@
 2025-03-03 13:41:48 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
 2025-03-03 13:41:48 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
 2025-03-03 13:41:48 | INFO | ✅ Updated 0 match scores
+2025-03-04 10:32:04 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 10:32:05 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:06 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:32:06 | INFO | ✅ Fetched 0 matches
+2025-03-04 10:32:06 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:07 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:32:07 | INFO | ✅ Fetched 0 matches
+2025-03-04 10:32:07 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:32:09 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:32:09 | INFO | ✅ Updated 0 match scores
+2025-03-04 10:34:57 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 10:34:58 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:34:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:34:59 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:34:59 | INFO | ✅ Fetched 0 matches
+2025-03-04 10:34:59 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:35:01 | INFO | ✅ Fetched 0 matches
+2025-03-04 10:35:01 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 10:35:03 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 10:35:03 | INFO | ✅ Updated 0 match scores
+2025-03-04 11:08:29 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 11:08:31 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:08:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:32 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:08:32 | INFO | ✅ Fetched 0 matches
+2025-03-04 11:08:32 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:34 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:35 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:08:35 | INFO | ✅ Fetched 0 matches
+2025-03-04 11:08:35 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 11:08:37 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:08:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:38 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:38 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:08:38 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:08:38 | INFO | ✅ Updated 0 match scores
+2025-03-04 11:50:18 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 11:50:20 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:50:20 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:20 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:20 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:21 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:21 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:21 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:21 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:21 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:21 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:50:21 | INFO | ✅ Fetched 0 matches
+2025-03-04 11:50:21 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:23 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:50:23 | INFO | ✅ Fetched 0 matches
+2025-03-04 11:50:23 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 11:50:25 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:50:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 11:50:26 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 11:50:26 | INFO | ✅ Updated 0 match scores
+2025-03-04 15:28:23 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 15:28:25 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 15:28:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:26 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 15:28:26 | INFO | ✅ Fetched 0 matches
+2025-03-04 15:28:26 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:28 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 15:28:28 | INFO | ✅ Fetched 0 matches
+2025-03-04 15:28:28 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 15:28:30 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 15:28:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 15:28:31 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 15:28:31 | INFO | ✅ Updated 0 match scores
+2025-03-04 18:56:36 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 18:56:38 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:39 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 18:56:39 | INFO | ✅ Fetched 0 matches
+2025-03-04 18:56:39 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:42 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 18:56:42 | INFO | ✅ Fetched 0 matches
+2025-03-04 18:56:42 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 18:56:44 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 18:56:44 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:08:57 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:08:59 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:08:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:08:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:08:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:08:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:08:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:00 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:09:00 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:09:00 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:02 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:09:02 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:09:03 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:09:05 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:09:05 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:11:36 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:11:38 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:39 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:11:39 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:11:39 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:41 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:11:41 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:11:41 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:11:43 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:11:43 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:15:23 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:15:25 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:15:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:25 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:26 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:15:26 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:15:26 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:28 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:15:28 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:15:28 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:15:30 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:15:30 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:35:12 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:14 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:35:14 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:35:14 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:16 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:35:16 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:35:16 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:35:18 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:35:18 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:18 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:18 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:19 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:19 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:19 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:19 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:19 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:35:19 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:35:19 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:39:58 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:00 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:40:00 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:40:00 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:02 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:40:02 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:40:02 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:40:05 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:40:05 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:41:03 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:05 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:41:05 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:41:05 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:07 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:08 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:41:08 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:41:08 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:41:09 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:41:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:09 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:10 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:10 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:10 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:10 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:10 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:41:10 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:41:10 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:42:59 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:01 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:43:01 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:43:03 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:04 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:04 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:43:04 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:06 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:06 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:43:24 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:43:26 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:26 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:27 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:27 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:27 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:27 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:27 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:43:27 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:43:28 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:29 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:29 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:43:29 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:43:31 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:43:31 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:44:57 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:44:59 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:44:59 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:44:59 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:02 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:45:02 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:45:02 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:45:03 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:45:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:45:04 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:45:04 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:53:35 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:37 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:53:37 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:53:37 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:39 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:53:39 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:53:39 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:53:41 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:53:41 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:53:42 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:53:42 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:56:53 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:56:55 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:56:55 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:55 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:55 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:56 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:56:56 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:56:56 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:58 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:56:59 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:56:59 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:56:59 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:02 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:57:02 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:57:02 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:58:09 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:11 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:58:11 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:58:11 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:13 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:58:13 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:58:13 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:15 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:58:16 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:58:16 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:58:59 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:01 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:01 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:59:01 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:59:03 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:03 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:04 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:04 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:04 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:59:04 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:59:05 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:05 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:06 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:06 | INFO | ✅ Updated 0 match scores
+2025-03-04 19:59:52 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:54 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:54 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:59:54 | INFO | 🔍 Fetching matches from FBRef for all upcoming dates
+2025-03-04 19:59:56 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:56 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:57 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:57 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:57 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:57 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:57 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:57 | INFO | ✅ Fetched 0 matches
+2025-03-04 19:59:57 | INFO | 🔍 Updating match scores from FBRef for all upcoming games
+2025-03-04 19:59:58 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time:  vs
+2025-03-04 19:59:59 | WARNING | ⚠️ Skipping match with invalid date/time: Home vs Away
+2025-03-04 19:59:59 | INFO | ✅ Updated 0 match scores

@@ -1,4 +1,5 @@
 from fastapi import APIRouter, Depends, HTTPException, status
+from fastapi.encoders import jsonable_encoder
 from sqlalchemy.orm import Session
 from typing import List
 from app.utils.database import get_db
@@ -86,7 +87,7 @@ def create_bet(bet_request: BetCreate, db: Session = Depends(get_db)):
     }
 
 
-@router.put("/{bet_id}", response_model=BetResponse)
+@router.put("/{bet_id}", response_model=dict)
 def update_bet(bet_id: int, bet_request: BetCreate, db: Session = Depends(get_db)):
     """
     Update an existing bet. Only allowed if bet_state is "upcoming".
@@ -95,23 +96,36 @@ def update_bet(bet_id: int, bet_request: BetCreate, db: Session = Depends(get_db
     logger.info(f"Updating bet {bet_id} for user {bet_request.user_id}")
 
     bet = db.query(Bet).filter(Bet.id == bet_id).first()
-    user = db.query(User).filter(User.id == bet.user_id).first()
-    game = db.query(Game).filter(Game.id == bet.game_id).first()
-    if not bet or not user:
+    if not bet:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND, detail="Bet not found"
         )
+
+    user = db.query(User).filter(User.id == bet.user_id).first()
+    game = db.query(Game).filter(Game.id == bet.game_id).first()
+
+    if not user:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
+        )
+
     gameday = str(game.match_time.date())
+
+    # ✅ Calculate amount difference and update bet
     amount_diff = bet.amount - bet_request.bet_amount
     bet.amount = bet_request.bet_amount
-    user.update_gameday_budget(gameday, -(amount_diff), db)
     bet.bet_choice = bet_request.bet_choice
-    db.commit()
-    logger.info(
-        f"✅ Bet {bet.id} updated. Remaining budget: {user.gameday_budget[gameday]} coins."
-    )
 
-    return bet
+    # ✅ Update user's gameday budget
+    user.update_gameday_budget(gameday, -amount_diff, db)
+
+    db.commit()
+
+    updated_budget = user.gameday_budget[gameday]  # ✅ Get the updated budget
+
+    logger.info(f"✅ Bet {bet.id} updated. Remaining budget: {updated_budget} coins.")
+
+    return {"bet": BetResponse.from_orm(bet), "updated_budget": updated_budget}
 
 
 @router.get("/user/{user_id}/bets", response_model=List[BetResponse])
@@ -157,7 +171,8 @@ def get_user_upcoming_bets(user_id: int, db: Session = Depends(get_db)):
             "user_id": bet.user_id,
             "game_id": bet.game_id,
             "bet_choice": str(bet.bet_choice),  # Convert to string
-            "bet_amount": float(bet.amount)
+            "bet_state": bet.bet_state,  # Convert to string
+            "amount": float(bet.amount)
             if bet.amount is not None
             else 0.0,  # Default to 0 if missing
         }

@@ -80,7 +80,7 @@ const GameCard = ({ game, userBet, userId, gamedayBudget, onBetPlaced, onDeleteB
       alert("Failed to delete bet");
     }
   };
-
+  console.log("User bet:", userBet);
   return (
     <Card sx={{ mb: 2, boxShadow: 3 }}>
       <CardContent>
@@ -200,16 +200,16 @@ const GameCard = ({ game, userBet, userId, gamedayBudget, onBetPlaced, onDeleteB
 };
 
 const PlaceBet = ({ upcomingGames, upcomingBets, userId, userBetsMap, gamedayBudget, onBetPlaced, onDeleteBet }) => {
+  console.log("User upcoming bets:", upcomingBets);
   return (
     <>
       {upcomingGames.map((game) => {
-        const userBet = userBetsMap ? userBetsMap.has(game.id) : false;
-
+        const userBet = upcomingBets.find((bet) => bet.game_id === game.id);
         return (
           <GameCard
             key={game.id}
             game={game}
-            userBet={userBet ? upcomingBets.find((bet) => bet.game_id === game.id) : null}
+            userBet={userBet}
             userId={userId}
             gamedayBudget={gamedayBudget}
             onBetPlaced={onBetPlaced}

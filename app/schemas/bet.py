@@ -7,7 +7,10 @@ class BetBase(BaseModel):
     user_id: int
     game_id: int
     bet_choice: str
-    bet_amount: int
+    bet_amount: int = Field(..., alias="amount")
+
+    class config:
+        allow_population_by_field_name = True
 
 
 class BetCreate(BetBase):
@@ -25,7 +28,9 @@ class BetResponse(BaseModel):
     game_id: int
     bet_choice: str
     bet_amount: float = Field(..., alias="amount")
+    bet_state: BetState
 
     class Config:
         orm_mode = True
-        populate_by_name = True
+        from_attributes = True
+        allow_population_by_field_name = True

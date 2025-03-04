@@ -12,7 +12,6 @@ import {
 } from "@mui/material";
 import NavbarDrawer from "../components/general/NavbarDrawer";
 import FixturesAndResults from "../components/homePage/FixturesAndResults.jsx";
-import UserActiveBets from "../components/betsPage/UserBetsActive";
 import UserPointsDisplay from "../components/homePage/UserPointsDisplay.jsx";
 import apiClient from "../api/apiClient.js";
 import { AuthContext } from "../context/AuthContext";
@@ -105,13 +104,6 @@ export default function HomePage() {
             {/* 🎯 Points Display */}
             {user && <UserPointsDisplay userId={user.id} />}
 
-            {/* 🎯 Active Bets */}
-            <Paper sx={{ p: 2, boxShadow: 3, width: "100%", borderRadius: "12px", backgroundColor: "white" }}>
-              <Typography variant="h6" sx={{ fontWeight: "bold", color: "#333" }}>
-                Your Active Bets
-              </Typography>
-              <UserActiveBets userId={user.id}/>
-            </Paper>
           </Grid>
         </Grid>
       </Box>

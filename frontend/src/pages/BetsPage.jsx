@@ -11,7 +11,6 @@ import {
   Paper,
 } from "@mui/material";
 import NavbarDrawer from "../components/general/NavbarDrawer";
-import PlaceBet from "../components/betsPage/PlaceBet";
 import BetCard from "../components/betsPage/BetCard";
 import apiClient from "../api/apiClient";
 
@@ -20,9 +19,9 @@ const BetsPage = () => {
   const [selectedDate, setSelectedDate] = useState("");
   const [loadingDates, setLoadingDates] = useState(true);
   const [loadingGames, setLoadingGames] = useState(false);
-  const [games, setGames] = useState([]);
-  const [upcomingBets, setUpcomingBets] = useState([]);
-  const [userBetsMap, setUserBetsMap] = useState(new Set());
+  const [games, setGames] = useState([]);  // ✅ Holds all games for the selected date
+  const [upcomingGames, setUpcomingGames] = useState([]);  // ✅ Holds games without bets
+  const [upcomingBets, setUpcomingBets] = useState([]);  // ✅ Holds games where user placed a bet
   const [gamedayBudget, setGamedayBudget] = useState(0);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const userId = localStorage.getItem("userId");
@@ -59,10 +58,15 @@ const BetsPage = () => {
     try {
       setLoadingGames(true);
       const response = await apiClient.get(`/games/upcoming/by-date/${date}`);
+
       setGames(response.data);
+
+      // ✅ Initially, all games are unbetted
+      setUpcomingGames(response.data);
     } catch (error) {
       console.error("Failed to fetch games:", error);
       setGames([]);
+      setUpcomingGames([]);
     } finally {
       setLoadingGames(false);
     }
@@ -83,45 +87,64 @@ const BetsPage = () => {
     try {
       const response = await apiClient.get(`/bets/user/${userId}/bets/upcoming`);
       setUpcomingBets(response.data);
-      setUserBetsMap(new Set(response.data.map((bet) => bet.game_id)));
+
+      // ✅ Remove betted games from upcomingGames
+      setUpcomingGames((prevGames) =>
+        prevGames.filter((game) => !response.data.some((bet) => bet.game_id === game.id))
+      );
     } catch (error) {
       console.error("Failed to fetch upcoming bets:", error);
       setUpcomingBets([]);
     }
   };
 
-  const handleBetPlaced = async (bet, updatedBudget) => {
+  const handleBetPlaced = (bet, updatedBudget) => {
+    console.log("Bet: ", bet);
+
     setUpcomingBets((prevBets) => {
-      const betExists = prevBets.some((b) => b.game_id === bet.game_id);
-      return betExists
-        ? prevBets.map((b) =>
-            b.game_id === bet.game_id ? { ...b, bet_choice: bet.bet_choice, bet_amount: bet.bet_amount } : b
-          )
-        : [...prevBets, bet];
+      const existingIndex = prevBets.findIndex((b) => b.id === bet.id);
+      if (existingIndex > -1) {
+        // Bet already exists, update it
+        const newBets = [...prevBets];
+        newBets[existingIndex] = bet;
+        return newBets;
+      } else {
+        // New bet, add it to the array and handle the unbetted games list
+        setUpcomingGames((prevGames) => prevGames.filter((g) => g.id !== bet.game_id));
+        return [...prevBets, bet];
+      }
     });
 
-    setUserBetsMap((prevMap) => new Set([...prevMap, bet.game_id]));
     setGamedayBudget(updatedBudget);
   };
 
-  // ✅ Handle Bet Edit (Update UI)
-  const handleBetUpdated = async (updatedBet, updatedBudget) => {
-    setUpcomingBets((prevBets) =>
-      prevBets.map((bet) => (bet.id === updatedBet.id ? updatedBet : bet))
-    );
-    await fetchGamedayBudget();
 
-  };
 
-  // ✅ Handle Bet Deletion
-  const handleBetDeleted = async(betId) => {
-    setUpcomingBets((prevBets) => prevBets.filter((bet) => bet.id !== betId));
-    setUserBetsMap((prevMap) => {
-      const newMap = new Set(prevMap);
-      newMap.delete(betId);
-      return newMap;
-    });
-    await fetchGamedayBudget();
+  const handleBetDeleted = async (betId) => {
+    try {
+      // ✅ Fetch updated budget first
+      const response = await apiClient.get(`/users/${userId}/gameday_budget/${selectedDate}`);
+      const updatedBudget = response.data.budget || 0;
+
+      // ✅ Find the bet to delete
+      const deletedBet = upcomingBets.find((bet) => bet.id === betId);
+      if (!deletedBet) return;
+
+      // ✅ Find the game related to the deleted bet
+      const gameToRestore = games.find((game) => game.id === deletedBet.game_id);
+      if (!gameToRestore) return;
+
+      // ✅ Remove bet from upcomingBets
+      setUpcomingBets((prevBets) => prevBets.filter((bet) => bet.id !== betId));
+
+      // ✅ Move game back to upcomingGames
+      setUpcomingGames((prevGames) => [...prevGames, gameToRestore]);
+
+      // ✅ Update the budget
+      setGamedayBudget(updatedBudget);
+    } catch (error) {
+      console.error("❌ Failed to delete bet or refresh budget:", error);
+    }
   };
 
   return (
@@ -163,33 +186,34 @@ const BetsPage = () => {
                 <CircularProgress />
               ) : (
                 <>
-                  {/* 🏆 Show Bet Cards First */}
-                  {upcomingBets
-                    .filter((bet) => userBetsMap.has(bet.game_id))
-                    .map((bet) => {
-                      const game = games.find((g) => g.id === bet.game_id);
-                      return game ? (
-                        <BetCard
-                          key={bet.id}
-                          game={game}
-                          bet={bet}
-                          userId={userId}  // ✅ Pass userId
-                          selectedDate={selectedDate}  // ✅ Pass selectedDate
-                          onBetUpdated={handleBetUpdated}
-                          onBetDeleted={handleBetDeleted}
-                        />
-                      ) : null;
-                    })}
+                  {/* 🏆 Show Placed Bets First */}
+                  {upcomingBets.map((bet) => {
+                    const game = games.find((g) => g.id === bet.game_id);
+                    return game ? (
+                      <BetCard
+                        key={bet.id}
+                        game={game}
+                        userBet={bet}
+                        userId={userId}
+                        gamedayBudget={gamedayBudget}
+                        onBetPlaced={handleBetPlaced}
+                        onDeleteBet={handleBetDeleted}
+                      />
+                    ) : null;
+                  })}
 
                   {/* 🏆 Show Unbetted Games */}
-                  <PlaceBet
-                    upcomingGames={games.filter((g) => !userBetsMap.has(g.id))}
-                    upcomingBets={upcomingBets}
-                    userId={userId}
-                    userBetsMap={userBetsMap}
-                    gamedayBudget={gamedayBudget}
-                    onBetPlaced={handleBetPlaced}
-                  />
+                  {upcomingGames.map((game) => (
+                    <BetCard
+                      key={game.id}
+                      game={game}
+                      userBet={null}
+                      userId={userId}
+                      gamedayBudget={gamedayBudget}
+                      onBetPlaced={handleBetPlaced}
+                      onDeleteBet={handleBetDeleted}
+                    />
+                  ))}
                 </>
               )}
             </Paper>
