@@ -77,22 +77,19 @@ class Game(Base):
             return True
         return False
 
-    @classmethod
-    def detirmine_game_winner(cls, score_team1: int, score_team2: int):
+    def detirmine_game_winner(self):
         """Determine the game result based on the scores."""
-        if not score_team1 or not score_team2:
+        if self.score_team1 is None or self.score_team2 is None:
             return None
-        if score_team1 > score_team2:
+        if self.score_team1 > self.score_team2:
             return "1"
-        elif score_team2 > score_team1:
+        if self.score_team2 > self.score_team1:
             return "2"
-        elif score_team1 == score_team2:
+        if self.score_team1 == self.score_team2:
             return "X"
-        else:
-            return None
 
     def update_game_state(self):
-        current_time = datetime.now()
+        current_time = datetime.utcnow()
         game_starting_time = self.match_time
         if current_time < game_starting_time:
             self.game_state = GameState.upcoming

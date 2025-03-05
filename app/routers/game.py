@@ -1,4 +1,4 @@
-from fastapi import APIRouter, Depends, HTTPException
+from fastapi import APIRouter, Depends, HTTPException, Query
 from sqlalchemy import cast, Date, func
 from sqlalchemy.orm import Session
 from datetime import datetime
@@ -182,3 +182,19 @@ def get_upcoming_game_dates(db: Session = Depends(get_db)):
         logger.warning("⚠️ No upcoming game dates found.")
 
     return date_list
+
+
+@router.get("/by-ids", response_model=List[GameResponse])
+def get_games_by_ids(game_ids: List[int] = Query(None), db: Session = Depends(get_db)):
+    """
+    Fetches game details for a list of game IDs.
+    """
+    if not game_ids:
+        return []  # Return an empty list if no IDs provided
+
+    games = db.query(Game).filter(Game.id.in_(game_ids)).all()
+
+    if not games:
+        raise HTTPException(status_code=404, detail="Games not found")
+
+    return games

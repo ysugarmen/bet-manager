@@ -102,28 +102,6 @@ def get_user(user_id: int, db: Session = Depends(get_db)):
     )
 
 
-@router.post("/{user_id}/update_points")
-def update_user_points(user_id: int, db: Session = Depends(get_db)):
-    """
-    Calculate the user's points based on their bets.
-    """
-    user = db.query(User).filter(User.id == user_id).first()
-    if not user:
-        logger.error(f"User {user_id} does not exist")
-        raise HTTPException(
-            status_code=status.HTTP_404_NOT_FOUND, detail="User not found"
-        )
-
-    total_points = user.points
-    for bet in user.bets:
-        if bet.reward:
-            total_points += bet.reward
-
-    user.points = total_points
-    db.commit()
-    logger.info(f"User {user_id} points updated successfully")
-
-
 @router.get("/{user_id}/points")
 def get_user_points(user_id: int, db: Session = Depends(get_db)):
     """

@@ -89,7 +89,6 @@ const BetCard = ({
       console.error("Failed to delete bet:", error);
     }
   };
-  console.log("UserBet: ", userBet);
   return (
     <Card
       sx={{

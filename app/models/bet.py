@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Enum
+from sqlalchemy import Column, Integer, String, ForeignKey, Enum, Boolean
 from sqlalchemy.orm import Session
 from app.models import Base
 from app.models.game import Game
@@ -16,11 +16,11 @@ class Bet(Base):
     bet_state = Column(Enum(BetState), nullable=False, default=BetState.editable)
     amount = Column(Integer, nullable=False)
     reward = Column(Integer, nullable=True)
+    points_granted = Column(Boolean, nullable=False, default=False)
 
     def __repr__(self):
         return f"<Bet(id={self.id}, user_id={self.user_id}, game_id={self.game_id}, bet_choice={self.bet_choice}, bet_amount={self.amount})>"
 
-    @classmethod
     def calculate_reward(self, game: Game):
         """
         Calculates the reward for a given bet choice and game winner.
@@ -33,6 +33,8 @@ class Bet(Base):
             odds = game.draw_odds
         if game.game_winner == self.bet_choice:
             self.reward = self.amount * odds
+        else:
+            self.reward = 0
 
     def update_bet_state(self, db: Session):
         current_time = datetime.utcnow()
@@ -44,3 +46,6 @@ class Bet(Base):
 
         if game.game_state == "ongoing" or game.game_state == "history":
             self.bet_state = BetState.locked
+
+        if game.game_state == "history" and not self.reward:
+            self.calculate_reward(game)

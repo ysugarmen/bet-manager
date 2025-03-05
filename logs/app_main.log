@@ -14398,3 +14398,809 @@ username
 2025-03-04 20:00:10 | INFO | 📡 PUT /bets/13 - 200 - 0.03s
 2025-03-04 20:00:18 | INFO | 📡 DELETE /bets/13 - 200 - 0.02s
 2025-03-04 20:00:18 | INFO | 📡 GET /users/2/gameday_budget/2025-03-04 - 200 - 0.05s
+2025-03-05 12:18:06 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:18:06 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:18:06 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:18:06 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:18:15 | INFO | ⚠️ No new games found
+2025-03-05 12:18:15 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:18:15 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:18:15 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:18:18 | INFO | ⚠️ No new games found
+2025-03-05 12:18:20 | INFO | ✅ Scheduled game update completed
+2025-03-05 12:18:38 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/2/points - 200 - 0.03s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/user - 200 - 0.08s
+2025-03-05 12:18:38 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.09s
+2025-03-05 12:18:38 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/2/points - 200 - 0.04s
+2025-03-05 12:18:38 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.06s
+2025-03-05 12:18:38 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-05 12:18:38 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.03s
+2025-03-05 12:18:43 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-05 12:18:45 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.01s
+2025-03-05 12:18:45 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.05s
+2025-03-05 12:18:45 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 12:18:45 | INFO | 📡 GET /bets/user/2/bets/upcoming - 200 - 0.05s
+2025-03-05 12:18:45 | INFO | 📡 GET /users/2/gameday_budget/2025-03-05 - 200 - 0.06s
+2025-03-05 12:26:02 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:26:02 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:26:02 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:26:02 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:26:05 | INFO | ⚠️ No new games found
+2025-03-05 12:26:05 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:26:05 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:26:05 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:26:05 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:26:07 | INFO | ⚠️ No new games found
+2025-03-05 12:26:10 | INFO | ✅ Scheduled game update completed
+2025-03-05 12:30:08 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:30:08 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:30:08 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:30:08 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:30:10 | INFO | ⚠️ No new games found
+2025-03-05 12:30:10 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:30:10 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:30:10 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:30:10 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:30:13 | INFO | ⚠️ No new games found
+2025-03-05 12:30:15 | INFO | ✅ Scheduled game update completed
+2025-03-05 12:31:37 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:31:37 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:31:37 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:31:37 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:31:40 | INFO | ⚠️ No new games found
+2025-03-05 12:31:40 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:31:40 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:31:40 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:31:40 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:31:42 | INFO | ⚠️ No new games found
+2025-03-05 12:31:44 | INFO | ✅ Scheduled game update completed
+2025-03-05 12:32:53 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:32:53 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:32:53 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:32:53 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:32:55 | INFO | ⚠️ No new games found
+2025-03-05 12:32:57 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:32:57 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:32:57 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:32:57 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:33:00 | INFO | ⚠️ No new games found
+2025-03-05 12:33:02 | INFO | ✅ Scheduled game update completed
+2025-03-05 12:35:45 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:35:45 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:35:45 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:35:45 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:35:47 | INFO | ⚠️ No new games found
+2025-03-05 12:39:47 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:39:47 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:39:47 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:39:47 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:47:25 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:47:25 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:47:25 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:47:25 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:47:28 | INFO | ⚠️ No new games found
+2025-03-05 12:49:09 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:49:09 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:49:09 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:49:09 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:49:11 | INFO | ⚠️ No new games found
+2025-03-05 12:50:39 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:50:39 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:50:39 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:50:39 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:50:42 | INFO | ⚠️ No new games found
+2025-03-05 12:50:45 | INFO | ✅ Scheduled game update completed
+2025-03-05 12:57:20 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:57:20 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:57:20 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:57:20 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:57:22 | INFO | ⚠️ No new games found
+2025-03-05 12:57:25 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:57:25 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:57:25 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:57:25 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:57:27 | INFO | ⚠️ No new games found
+2025-03-05 12:57:29 | INFO | ✅ Scheduled game update completed
+2025-03-05 12:58:00 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:58:00 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:58:00 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:58:00 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:58:02 | INFO | ⚠️ No new games found
+2025-03-05 12:59:05 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 12:59:05 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 12:59:05 | INFO | 🔄 Running scheduled game update
+2025-03-05 12:59:05 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:59:13 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 12:59:13 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 12:59:13 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 12:59:13 | INFO | 🔄 Fetching all games from web
+2025-03-05 12:59:15 | INFO | ⚠️ No new games found
+2025-03-05 13:07:01 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:07:01 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:07:01 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:07:01 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:07:03 | INFO | ⚠️ No new games found
+2025-03-05 13:09:00 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:09:00 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:09:00 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:09:00 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:09:02 | INFO | ⚠️ No new games found
+2025-03-05 13:11:12 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:11:12 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:11:13 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:11:13 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:11:15 | INFO | ⚠️ No new games found
+2025-03-05 13:17:28 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:17:28 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:17:28 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:17:28 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:17:30 | INFO | ⚠️ No new games found
+2025-03-05 13:17:56 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:17:56 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:17:56 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:17:56 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:17:58 | INFO | ⚠️ No new games found
+2025-03-05 13:18:01 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 13:18:01 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:18:01 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:18:01 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:18:03 | INFO | ⚠️ No new games found
+2025-03-05 13:18:05 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:19:01 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:19:01 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:19:01 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:19:01 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:19:03 | INFO | ⚠️ No new games found
+2025-03-05 13:19:05 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 13:19:05 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:19:05 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:19:05 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:19:10 | INFO | ⚠️ No new games found
+2025-03-05 13:19:12 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:20:26 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:20:26 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:20:26 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:20:26 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:20:29 | INFO | ⚠️ No new games found
+2025-03-05 13:22:11 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 13:22:11 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:22:11 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:22:11 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:22:51 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:22:51 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:22:51 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:22:51 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:22:54 | INFO | ⚠️ No new games found
+2025-03-05 13:23:16 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 13:23:16 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:23:16 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:23:16 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:23:19 | INFO | ⚠️ No new games found
+2025-03-05 13:23:21 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:23:59 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:23:59 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:23:59 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:23:59 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:24:01 | INFO | ⚠️ No new games found
+2025-03-05 13:24:04 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 13:24:04 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:24:04 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:24:04 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:24:06 | INFO | ⚠️ No new games found
+2025-03-05 13:24:09 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:27:09 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:27:10 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:27:10 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:27:10 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:27:12 | INFO | ⚠️ No new games found
+2025-03-05 13:27:14 | INFO | ✅ Startup tasks completed: Games fetched & states updated
+2025-03-05 13:27:14 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:27:14 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:27:14 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:27:17 | INFO | ⚠️ No new games found
+2025-03-05 13:27:19 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:28:12 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:28:13 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:28:13 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:28:13 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:28:15 | INFO | ⚠️ No new games found
+2025-03-05 13:29:08 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:29:08 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:29:08 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:29:08 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:29:11 | INFO | ⚠️ No new games found
+2025-03-05 13:29:37 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 13:29:38 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:29:40 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:29:40 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:29:43 | INFO | ⚠️ No new games found
+2025-03-05 13:29:46 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:30:26 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:30:26 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:30:26 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:30:26 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:30:28 | INFO | ⚠️ No new games found
+2025-03-05 13:30:34 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 13:30:34 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:30:34 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:30:34 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:30:36 | INFO | ⚠️ No new games found
+2025-03-05 13:30:38 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:31:26 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:31:26 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:31:26 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:31:26 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:31:28 | INFO | ⚠️ No new games found
+2025-03-05 13:31:31 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 13:31:31 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:31:31 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:31:31 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:31:31 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-05 13:31:31 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-05 13:31:31 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.07s
+2025-03-05 13:31:31 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.05s
+2025-03-05 13:31:31 | INFO | 📡 GET /users/2/points - 200 - 0.03s
+2025-03-05 13:31:31 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-05 13:31:31 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.18s
+2025-03-05 13:31:31 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.18s
+2025-03-05 13:31:33 | INFO | ⚠️ No new games found
+2025-03-05 13:31:35 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:33:38 | INFO | 📡 GET /users/2/points - 200 - 0.03s
+2025-03-05 13:34:45 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:34:45 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:34:45 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:34:45 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:34:48 | INFO | ⚠️ No new games found
+2025-03-05 13:34:50 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 13:34:50 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:34:50 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:34:50 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:34:53 | INFO | ⚠️ No new games found
+2025-03-05 13:34:55 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:34:58 | INFO | 📡 GET /users/user - 200 - 0.12s
+2025-03-05 13:34:58 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-05 13:34:58 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 13:34:58 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 13:35:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 11.85s
+2025-03-05 13:35:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 13:35:18 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 7.72s
+2025-03-05 13:35:18 | INFO | 📡 GET /users/2/points - 200 - 19.69s
+2025-03-05 13:37:49 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 151.00s
+2025-03-05 13:37:49 | INFO | 📡 OPTIONS /users/login - 200 - 0.03s
+2025-03-05 13:37:49 | INFO | 📡 OPTIONS /users/login - 200 - 0.04s
+2025-03-05 13:37:51 | INFO | 📡 POST /users/logout - 200 - 2.70s
+2025-03-05 13:37:51 | INFO | 📡 POST /users/logout - 200 - 2.70s
+2025-03-05 13:37:51 | INFO | 📡 POST /users/logout - 200 - 2.70s
+2025-03-05 13:37:54 | INFO | 📡 POST /users/logout - 200 - 4.74s
+2025-03-05 13:37:54 | INFO | 📡 POST /users/logout - 200 - 4.74s
+2025-03-05 13:37:54 | INFO | 📡 GET /users/2/points - 200 - 4.78s
+2025-03-05 13:37:54 | INFO | 📡 GET /users/2/points - 200 - 155.72s
+2025-03-05 13:37:54 | INFO | 📡 POST /users/login - 401 - 2.09s
+2025-03-05 13:37:54 | INFO | 📡 POST /users/login - 401 - 2.12s
+2025-03-05 13:37:54 | INFO | 📡 GET /users/2/points - 200 - 4.86s
+2025-03-05 13:37:54 | INFO | 📡 GET /users/user - 200 - 4.86s
+2025-03-05 13:37:54 | INFO | 📡 GET /users/user - 200 - 4.86s
+2025-03-05 13:37:54 | INFO | 📡 GET /users/user - 200 - 4.87s
+2025-03-05 13:37:54 | INFO | 📡 GET /users/user - 200 - 4.88s
+2025-03-05 13:41:53 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 13:41:53 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 13:41:53 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 13:41:53 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:41:56 | INFO | ⚠️ No new games found
+2025-03-05 13:42:00 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 13:42:00 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 13:42:00 | INFO | 🔄 Running scheduled game update
+2025-03-05 13:42:00 | INFO | 🔄 Fetching all games from web
+2025-03-05 13:42:02 | INFO | ⚠️ No new games found
+2025-03-05 13:42:05 | INFO | ✅ Scheduled game update completed
+2025-03-05 13:42:07 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/user - 200 - 6.69s
+2025-03-05 13:42:14 | INFO | 📡 GET /games/upcoming/dates - 200 - 6.72s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/user - 200 - 0.05s
+2025-03-05 13:42:14 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.06s
+2025-03-05 13:42:14 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/user - 200 - 0.15s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/2/points - 200 - 6.97s
+2025-03-05 13:42:14 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.25s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/2/points - 200 - 0.03s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/2/points - 200 - 0.02s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-05 13:42:14 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-05 13:42:18 | INFO | 📡 GET /users/2/points - 200 - 0.01s
+2025-03-05 13:42:20 | INFO | 📡 POST /users/logout - 200 - 0.00s
+2025-03-05 13:43:05 | INFO | 📡 POST /users/login - 401 - 25.38s
+2025-03-05 13:43:30 | INFO | 📡 POST /users/login - 200 - 17.87s
+2025-03-05 13:43:43 | INFO | 📡 GET /users/1/points - 200 - 12.41s
+2025-03-05 13:43:43 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 13:43:43 | INFO | 📡 GET /games/upcoming/dates - 200 - 12.48s
+2025-03-05 13:43:43 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 13:43:43 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.02s
+2025-03-05 13:43:43 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 13:43:43 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 13:43:43 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.03s
+2025-03-05 15:22:13 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 15:22:13 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 15:22:13 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 15:22:13 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:22:16 | INFO | ⚠️ No new games found
+2025-03-05 15:22:18 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 15:22:18 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 15:22:18 | INFO | 🔄 Running scheduled game update
+2025-03-05 15:22:18 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:22:19 | INFO | 📡 POST /users/logout - 200 - 0.07s
+2025-03-05 15:22:19 | INFO | 📡 POST /users/logout - 200 - 0.11s
+2025-03-05 15:22:20 | INFO | 📡 GET /users/user - 200 - 0.35s
+2025-03-05 15:22:20 | INFO | 📡 GET /users/user - 200 - 0.33s
+2025-03-05 15:22:20 | INFO | 📡 GET /users/1/points - 200 - 0.27s
+2025-03-05 15:22:20 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.38s
+2025-03-05 15:22:20 | INFO | 📡 GET /users/1/points - 200 - 0.17s
+2025-03-05 15:22:20 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.24s
+2025-03-05 15:22:20 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.26s
+2025-03-05 15:22:21 | INFO | 📡 GET /users/1/points - 200 - 0.24s
+2025-03-05 15:22:21 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.23s
+2025-03-05 15:22:21 | INFO | 📡 GET /users/1/points - 200 - 0.19s
+2025-03-05 15:22:22 | INFO | ⚠️ No new games found
+2025-03-05 15:22:24 | INFO | ✅ Scheduled game update completed
+2025-03-05 15:29:23 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 15:29:23 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 15:29:23 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 15:29:23 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:29:27 | INFO | ⚠️ No new games found
+2025-03-05 15:33:01 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 15:33:01 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 15:33:01 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 15:33:01 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:33:04 | INFO | ⚠️ No new games found
+2025-03-05 15:40:26 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 15:40:26 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 15:40:26 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 15:40:26 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:40:29 | INFO | ⚠️ No new games found
+2025-03-05 15:41:12 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 15:41:13 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 15:41:13 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 15:41:13 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:41:15 | INFO | ⚠️ No new games found
+2025-03-05 15:41:59 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 15:41:59 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 15:41:59 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 15:41:59 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:42:01 | INFO | ⚠️ No new games found
+2025-03-05 15:42:04 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 15:42:04 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 15:42:04 | INFO | 🔄 Running scheduled game update
+2025-03-05 15:42:04 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:42:06 | INFO | ⚠️ No new games found
+2025-03-05 15:42:08 | INFO | ✅ Scheduled game update completed
+2025-03-05 15:42:37 | INFO | 📡 OPTIONS /users/login - 200 - 0.00s
+2025-03-05 15:42:38 | INFO | 📡 POST /users/login - 200 - 0.35s
+2025-03-05 15:42:38 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:42:38 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 15:42:38 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.08s
+2025-03-05 15:42:38 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 15:42:38 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 15:42:38 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.07s
+2025-03-05 15:42:38 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 15:42:38 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/user - 200 - 0.16s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/user - 200 - 0.05s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/user - 200 - 0.05s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/1/points - 200 - 0.06s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-05 15:43:13 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.11s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:43:13 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:43:13 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 15:43:13 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:43:13 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.07s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/user - 200 - 0.06s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:43:28 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:43:28 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:43:28 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.03s
+2025-03-05 15:43:28 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.02s
+2025-03-05 15:43:28 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 15:43:58 | INFO | 📡 GET /users/user - 200 - 0.14s
+2025-03-05 15:43:59 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-05 15:43:59 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 15:43:59 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:43:59 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-05 15:43:59 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:43:59 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 15:43:59 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.06s
+2025-03-05 15:43:59 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:43:59 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 15:43:59 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.01s
+2025-03-05 15:43:59 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 15:44:59 | INFO | 📡 GET /users/user - 200 - 0.13s
+2025-03-05 15:44:59 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-05 15:45:00 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-05 15:45:00 | INFO | 📡 GET /users/user - 200 - 0.16s
+2025-03-05 15:45:00 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:45:00 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-05 15:45:00 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:45:00 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-05 15:45:00 | INFO | 📡 GET /users/1/points - 200 - 0.08s
+2025-03-05 15:45:00 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 15:45:00 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 15:45:00 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/user - 200 - 0.10s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:45:31 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 15:45:31 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/1/points - 200 - 0.11s
+2025-03-05 15:45:31 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.12s
+2025-03-05 15:45:31 | INFO | 📡 GET /users/1/points - 200 - 0.07s
+2025-03-05 15:45:31 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.07s
+2025-03-05 15:45:49 | INFO | 📡 GET /users/user - 200 - 0.07s
+2025-03-05 15:45:49 | INFO | 📡 GET /users/user - 200 - 0.09s
+2025-03-05 15:45:49 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:45:49 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:45:50 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 15:45:50 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.05s
+2025-03-05 15:45:50 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 15:45:50 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-05 15:45:50 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 15:45:50 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:45:50 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.03s
+2025-03-05 15:45:50 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:45:50 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.03s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/user - 200 - 0.07s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/user - 200 - 0.14s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:46:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 15:46:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.07s
+2025-03-05 15:46:10 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.08s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 15:46:10 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.09s
+2025-03-05 15:46:10 | INFO | 📡 GET /users/1/points - 200 - 0.10s
+2025-03-05 15:46:35 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 15:46:35 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 15:46:35 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 15:46:35 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:46:37 | INFO | ⚠️ No new games found
+2025-03-05 15:47:21 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 15:47:22 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 15:47:22 | INFO | 🔄 Running scheduled game update
+2025-03-05 15:47:22 | INFO | 🔄 Fetching all games from web
+2025-03-05 15:47:24 | INFO | ⚠️ No new games found
+2025-03-05 15:47:32 | INFO | ✅ Scheduled game update completed
+2025-03-05 15:47:36 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 15:47:38 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 15:47:38 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.06s
+2025-03-05 15:47:38 | INFO | 📡 GET /users/1/gameday_budget/2025-03-05 - 200 - 0.12s
+2025-03-05 15:47:38 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.15s
+2025-03-05 15:47:38 | INFO | 📡 GET /bets/user/1/bets/upcoming - 200 - 0.17s
+2025-03-05 15:47:41 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 15:47:41 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 15:47:41 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 15:47:41 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-05 15:47:41 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:47:41 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.06s
+2025-03-05 15:47:41 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:47:41 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 15:48:26 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:48:27 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.03s
+2025-03-05 15:48:27 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/user - 200 - 0.14s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/user - 200 - 0.04s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:49:40 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/1/points - 200 - 0.08s
+2025-03-05 15:49:40 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.08s
+2025-03-05 15:49:40 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.04s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 15:49:40 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.04s
+2025-03-05 15:49:40 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 15:49:42 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 15:49:44 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 15:49:44 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 16:00:29 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.05s
+2025-03-05 16:00:29 | INFO | 📡 OPTIONS /games/by-ids - 200 - 0.01s
+2025-03-05 16:00:29 | INFO | 📡 POST /games/by-ids - 405 - 0.01s
+2025-03-05 16:00:29 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.06s
+2025-03-05 16:00:29 | INFO | 📡 POST /games/by-ids - 405 - 0.00s
+2025-03-05 16:03:06 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 16:03:06 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 16:03:06 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 16:03:06 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:03:09 | INFO | ⚠️ No new games found
+2025-03-05 16:03:23 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 16:03:23 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 16:03:23 | INFO | 🔄 Running scheduled game update
+2025-03-05 16:03:23 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:03:27 | INFO | ⚠️ No new games found
+2025-03-05 16:03:29 | INFO | 📡 GET /users/1/points - 200 - 0.26s
+2025-03-05 16:03:29 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.34s
+2025-03-05 16:03:30 | INFO | 📡 GET /users/1/points - 200 - 0.19s
+2025-03-05 16:03:30 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.27s
+2025-03-05 16:03:30 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.37s
+2025-03-05 16:03:30 | INFO | 📡 GET /users/1/points - 200 - 0.24s
+2025-03-05 16:03:30 | INFO | 📡 GET /users/1/points - 200 - 0.07s
+2025-03-05 16:03:30 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.14s
+2025-03-05 16:03:31 | INFO | ✅ Scheduled game update completed
+2025-03-05 16:03:31 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 16:03:32 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 16:03:32 | INFO | 📡 POST /games/by-ids - 405 - 0.01s
+2025-03-05 16:03:32 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.04s
+2025-03-05 16:03:32 | INFO | 📡 POST /games/by-ids - 405 - 0.00s
+2025-03-05 16:04:06 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 16:04:06 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 16:04:06 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 16:04:06 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:04:08 | INFO | ⚠️ No new games found
+2025-03-05 16:04:10 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 16:04:10 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 16:04:10 | INFO | 🔄 Running scheduled game update
+2025-03-05 16:04:10 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:04:13 | INFO | ⚠️ No new games found
+2025-03-05 16:04:15 | INFO | ✅ Scheduled game update completed
+2025-03-05 16:04:29 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 16:04:29 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 16:04:29 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.10s
+2025-03-05 16:04:29 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 16:04:29 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-05 16:04:29 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 16:04:29 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.10s
+2025-03-05 16:04:29 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.03s
+2025-03-05 16:04:30 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 16:04:32 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 16:04:32 | INFO | 📡 POST /games/by-ids - 422 - 0.01s
+2025-03-05 16:04:32 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.03s
+2025-03-05 16:04:32 | INFO | 📡 POST /games/by-ids - 422 - 0.02s
+2025-03-05 16:06:45 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.06s
+2025-03-05 16:06:45 | INFO | 📡 POST /games/by-ids - 422 - 0.01s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/user - 200 - 0.06s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 16:06:47 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.03s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 16:06:47 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.06s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 16:06:47 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.07s
+2025-03-05 16:06:47 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.02s
+2025-03-05 16:06:47 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 16:06:51 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 16:06:53 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.03s
+2025-03-05 16:06:53 | INFO | 📡 POST /games/by-ids - 422 - 0.01s
+2025-03-05 16:06:53 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 16:06:53 | INFO | 📡 POST /games/by-ids - 422 - 0.01s
+2025-03-05 16:09:58 | INFO | 📡 GET /users/user - 200 - 0.07s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/user - 200 - 0.20s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/1/points - 200 - 0.10s
+2025-03-05 16:09:59 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.12s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/1/points - 200 - 0.06s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/user - 200 - 0.09s
+2025-03-05 16:09:59 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.12s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/1/points - 200 - 0.06s
+2025-03-05 16:09:59 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.12s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/user - 200 - 0.07s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/1/points - 200 - 0.04s
+2025-03-05 16:09:59 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 16:09:59 | INFO | 📡 GET /users/1/points - 200 - 0.08s
+2025-03-05 16:10:03 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 16:10:04 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.01s
+2025-03-05 16:10:04 | INFO | 📡 POST /games/by-ids - 422 - 0.01s
+2025-03-05 16:10:04 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 16:10:04 | INFO | 📡 POST /games/by-ids - 422 - 0.01s
+2025-03-05 16:11:30 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 16:11:30 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 16:11:30 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 16:11:30 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:11:34 | INFO | ⚠️ No new games found
+2025-03-05 16:11:37 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 16:11:37 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 16:11:37 | INFO | 🔄 Running scheduled game update
+2025-03-05 16:11:37 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:11:37 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 16:11:37 | INFO | 📡 GET /games/by-ids - 422 - 0.01s
+2025-03-05 16:11:39 | INFO | 📡 GET /users/1/points - 200 - 0.19s
+2025-03-05 16:11:39 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.18s
+2025-03-05 16:11:40 | INFO | 📡 GET /users/1/points - 200 - 0.08s
+2025-03-05 16:11:40 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.14s
+2025-03-05 16:11:40 | INFO | 📡 GET /users/1/points - 200 - 0.10s
+2025-03-05 16:11:40 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.16s
+2025-03-05 16:11:40 | INFO | 📡 GET /users/1/points - 200 - 0.08s
+2025-03-05 16:11:40 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.09s
+2025-03-05 16:11:40 | INFO | ⚠️ No new games found
+2025-03-05 16:11:42 | INFO | 📡 GET /users/1/points - 200 - 0.13s
+2025-03-05 16:11:43 | INFO | ✅ Scheduled game update completed
+2025-03-05 16:11:44 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.01s
+2025-03-05 16:11:44 | INFO | 📡 GET /games/by-ids - 422 - 0.02s
+2025-03-05 16:11:44 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.03s
+2025-03-05 16:11:44 | INFO | 📡 GET /games/by-ids - 422 - 0.01s
+2025-03-05 16:15:26 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 16:15:26 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 16:15:26 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 16:15:26 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:15:29 | INFO | ⚠️ No new games found
+2025-03-05 16:15:33 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 16:15:33 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 16:15:33 | INFO | 🔄 Running scheduled game update
+2025-03-05 16:15:33 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:15:33 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.03s
+2025-03-05 16:15:34 | INFO | 📡 GET /games/by-ids - 422 - 0.01s
+2025-03-05 16:15:36 | INFO | 📡 GET /users/1/points - 200 - 0.17s
+2025-03-05 16:15:36 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.23s
+2025-03-05 16:15:36 | INFO | 📡 GET /users/1/points - 200 - 0.13s
+2025-03-05 16:15:36 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.23s
+2025-03-05 16:15:36 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.26s
+2025-03-05 16:15:36 | INFO | 📡 GET /users/1/points - 200 - 0.24s
+2025-03-05 16:15:36 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.10s
+2025-03-05 16:15:36 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 16:15:37 | INFO | ⚠️ No new games found
+2025-03-05 16:15:38 | INFO | 📡 GET /users/1/points - 200 - 0.14s
+2025-03-05 16:15:39 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.06s
+2025-03-05 16:15:39 | INFO | 📡 GET /games/by-ids - 422 - 0.03s
+2025-03-05 16:15:39 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.06s
+2025-03-05 16:15:39 | INFO | 📡 GET /games/by-ids - 422 - 0.02s
+2025-03-05 16:15:39 | INFO | ✅ Scheduled game update completed
+2025-03-05 16:17:30 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 16:17:31 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 16:17:31 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 16:17:31 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:17:33 | INFO | ⚠️ No new games found
+2025-03-05 16:17:36 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 16:17:36 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 16:17:36 | INFO | 🔄 Running scheduled game update
+2025-03-05 16:17:36 | INFO | 🔄 Fetching all games from web
+2025-03-05 16:17:36 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 16:17:47 | INFO | 📡 GET /games/by-ids - 200 - 11.54s
+2025-03-05 16:17:50 | INFO | ⚠️ No new games found
+2025-03-05 16:17:53 | INFO | ✅ Scheduled game update completed
+2025-03-05 16:23:29 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.05s
+2025-03-05 16:23:29 | INFO | 📡 GET /games/by-ids - 200 - 0.01s
+2025-03-05 18:56:19 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.36s
+2025-03-05 18:56:19 | INFO | 📡 GET /games/by-ids - 200 - 0.11s
+2025-03-05 18:56:19 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.12s
+2025-03-05 18:56:19 | INFO | 📡 GET /games/by-ids - 200 - 0.01s
+2025-03-05 18:56:21 | INFO | 📡 GET /users/1/points - 200 - 0.09s
+2025-03-05 18:56:21 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 18:56:22 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.64s
+2025-03-05 18:56:22 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 18:56:22 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.06s
+2025-03-05 18:56:22 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 18:56:22 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.09s
+2025-03-05 18:56:22 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.02s
+2025-03-05 18:56:23 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 18:56:26 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 18:56:26 | INFO | 📡 GET /games/by-ids - 200 - 0.02s
+2025-03-05 18:56:26 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.04s
+2025-03-05 18:56:26 | INFO | 📡 GET /games/by-ids - 200 - 0.01s
+2025-03-05 18:56:46 | INFO | 📡 GET /users/user - 200 - 0.16s
+2025-03-05 18:56:46 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 18:56:46 | INFO | 📡 GET /users/user - 200 - 0.06s
+2025-03-05 18:56:46 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 18:56:46 | INFO | 📡 GET /users/user - 200 - 0.10s
+2025-03-05 18:56:46 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.04s
+2025-03-05 18:56:46 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 18:56:46 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-05 18:56:47 | INFO | 📡 GET /users/1/points - 200 - 0.06s
+2025-03-05 18:56:47 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 18:56:47 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.06s
+2025-03-05 18:56:47 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.01s
+2025-03-05 18:56:48 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 18:56:49 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.01s
+2025-03-05 18:56:49 | INFO | 📡 GET /games/by-ids - 200 - 0.01s
+2025-03-05 18:56:49 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.03s
+2025-03-05 18:56:49 | INFO | 📡 GET /games/by-ids - 200 - 0.01s
+2025-03-05 18:58:41 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.15s
+2025-03-05 18:58:41 | INFO | 📡 GET /games/by-ids - 200 - 0.01s
+2025-03-05 18:59:27 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.01s
+2025-03-05 18:59:27 | INFO | 📡 GET /games/by-ids - 200 - 0.01s
+2025-03-05 18:59:57 | INFO | 📡 GET /users/user - 200 - 0.03s
+2025-03-05 18:59:57 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 18:59:57 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 18:59:57 | INFO | 📡 GET /users/user - 200 - 0.01s
+2025-03-05 18:59:57 | INFO | 📡 GET /users/1/points - 200 - 0.06s
+2025-03-05 18:59:57 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.08s
+2025-03-05 18:59:57 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 18:59:57 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.09s
+2025-03-05 18:59:57 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.04s
+2025-03-05 18:59:57 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 18:59:58 | INFO | 📡 GET /users/1/points - 200 - 0.11s
+2025-03-05 18:59:58 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.12s
+2025-03-05 19:00:00 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 19:00:01 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.01s
+2025-03-05 19:00:14 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 12.98s
+2025-03-05 19:00:16 | INFO | 📡 GET /games/by-ids - 200 - 14.92s
+2025-03-05 19:00:20 | INFO | 📡 GET /games/by-ids - 200 - 3.97s
+2025-03-05 19:00:51 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 19:00:51 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 19:00:51 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 19:00:51 | INFO | 🔄 Fetching all games from web
+2025-03-05 19:00:54 | INFO | ⚠️ No new games found
+2025-03-05 19:00:57 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 19:00:57 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 19:00:57 | INFO | 🔄 Running scheduled game update
+2025-03-05 19:00:57 | INFO | 🔄 Fetching all games from web
+2025-03-05 19:01:00 | INFO | ⚠️ No new games found
+2025-03-05 19:01:03 | INFO | ✅ Scheduled game update completed
+2025-03-05 19:06:59 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 19:06:59 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 19:06:59 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 19:06:59 | INFO | 🔄 Fetching all games from web
+2025-03-05 19:07:01 | INFO | ⚠️ No new games found
+2025-03-05 19:07:04 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 19:07:04 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 19:07:04 | INFO | 🔄 Running scheduled game update
+2025-03-05 19:07:04 | INFO | 🔄 Fetching all games from web
+2025-03-05 19:07:04 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 19:07:04 | WARNING | 🚨 API path detected in React serve_react: games/by-ids/162
+2025-03-05 19:07:04 | INFO | 📡 GET /games/by-ids/162 - 404 - 0.01s
+2025-03-05 19:07:06 | INFO | ⚠️ No new games found
+2025-03-05 19:07:09 | INFO | ✅ Scheduled game update completed
+2025-03-05 19:07:30 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 19:10:41 | INFO | 📡 GET /games/by-ids - 200 - 190.72s
+2025-03-05 19:10:41 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.08s
+2025-03-05 19:10:41 | INFO | 📡 GET /users/user - 200 - 0.16s
+2025-03-05 19:10:41 | INFO | 📡 GET /users/user - 200 - 0.16s
+2025-03-05 19:10:41 | INFO | 📡 GET /users/user - 200 - 0.05s
+2025-03-05 19:10:41 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 19:10:41 | INFO | 📡 GET /users/user - 200 - 0.05s
+2025-03-05 19:10:41 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.07s
+2025-03-05 19:10:42 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 19:10:42 | INFO | 📡 GET /users/user - 200 - 0.08s
+2025-03-05 19:10:42 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.09s
+2025-03-05 19:10:42 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 19:10:42 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.08s
+2025-03-05 19:10:42 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 19:10:42 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 19:10:42 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 19:10:45 | INFO | 📡 GET /users/1/points - 200 - 0.01s
+2025-03-05 19:10:49 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.01s
+2025-03-05 19:10:58 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 8.56s
+2025-03-05 19:11:08 | INFO | 📡 GET /games/by-ids - 200 - 18.99s
+2025-03-05 19:11:10 | INFO | 📡 GET /games/by-ids - 200 - 1.70s
+2025-03-05 19:14:55 | INFO | 🚀 Bet Manager is starting up...
+2025-03-05 19:14:55 | INFO | ✅ Bet Manager is ready to go!
+2025-03-05 19:14:55 | INFO | 🚀 Fetching initial games on startup
+2025-03-05 19:14:55 | INFO | 🔄 Fetching all games from web
+2025-03-05 19:14:58 | INFO | ⚠️ No new games found
+2025-03-05 19:15:02 | INFO | ✅ Startup tasks completed: Games fetched & states updated & all users points updated
+2025-03-05 19:15:02 | INFO | ⏳ Starting background task for scheduled updates
+2025-03-05 19:15:02 | INFO | 🔄 Running scheduled game update
+2025-03-05 19:15:02 | INFO | 🔄 Fetching all games from web
+2025-03-05 19:15:05 | INFO | ⚠️ No new games found
+2025-03-05 19:15:08 | INFO | ✅ Scheduled game update completed
+2025-03-05 19:15:09 | INFO | 📡 GET /users/user - 200 - 0.08s
+2025-03-05 19:15:09 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 19:15:09 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 19:15:10 | INFO | 📡 GET /users/user - 200 - 0.02s
+2025-03-05 19:15:10 | INFO | 📡 GET /users/1/points - 200 - 0.02s
+2025-03-05 19:15:10 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 19:15:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.14s
+2025-03-05 19:15:10 | INFO | 📡 GET /games/upcoming/dates - 200 - 0.02s
+2025-03-05 19:15:10 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 19:15:10 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.05s
+2025-03-05 19:15:10 | INFO | 📡 GET /users/1/points - 200 - 0.05s
+2025-03-05 19:15:10 | INFO | 📡 GET /games/upcoming/by-date/2025-03-05 - 200 - 0.06s
+2025-03-05 19:15:12 | INFO | 📡 GET /users/1/points - 200 - 0.03s
+2025-03-05 19:15:14 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 0.02s
+2025-03-05 19:15:19 | INFO | 📡 GET /bets/user/1/bets/history - 200 - 5.54s
+2025-03-05 19:15:20 | INFO | 📡 GET /games/by-ids - 200 - 5.72s
+2025-03-05 19:15:20 | INFO | 📡 GET /games/by-ids - 200 - 0.04s

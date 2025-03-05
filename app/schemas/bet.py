@@ -29,6 +29,7 @@ class BetResponse(BaseModel):
     bet_choice: str
     bet_amount: float = Field(..., alias="amount")
     bet_state: BetState
+    reward: Optional[float] = None
 
     class Config:
         orm_mode = True

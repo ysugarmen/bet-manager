@@ -123,13 +123,19 @@ def update_scores_from_web(db: Session, target_date: str = None):
         if len(cells) > 1:
             date = cells[3].get_text(strip=True)
             start_time = cells[4].get_text(strip=True)
-            team1 = cells[5].get_text(strip=True)
-            team2 = cells[9].get_text(strip=True)
-            score_team1 = cells[6].get_text(strip=True) or None
-            score_team2 = cells[8].get_text(strip=True) or None
+            raw_team1 = cells[5].get_text(strip=True)
+            raw_team2 = cells[9].get_text(strip=True)
+            team1 = clean_team_name(raw_team1)
+            team2 = clean_team_name(raw_team2)
+            score_text = cells[7].get_text(strip=True)
 
             if target_date and date != target_date:
                 continue  # Skip games not on the target date
+
+            if "–" in score_text:  # Proper score format
+                score_team1, score_team2 = map(int, score_text.split("–"))
+            else:
+                continue
 
             try:
                 match_datetime = datetime.strptime(
@@ -153,9 +159,10 @@ def update_scores_from_web(db: Session, target_date: str = None):
                 .first()
             )
 
-            if game and score_team1 is not None and score_team2 is not None:
-                game.score_team1 = int(score_team1)
-                game.score_team2 = int(score_team2)
+            if game and (game.score_team1 is None or game.score_team2 is None):
+                game.score_team1 = score_team1
+                game.score_team2 = score_team2
+                game.game_winner = Game.detirmine_game_winner()
                 db.add(game)
                 updated_count += 1
                 logger.info(

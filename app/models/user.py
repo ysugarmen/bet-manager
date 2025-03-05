@@ -1,12 +1,9 @@
 from sqlalchemy import Column, Integer, String, DateTime, func, CheckConstraint, JSON
-from sqlalchemy.orm import relationship, Session
+from sqlalchemy.orm import Session
 from sqlalchemy.orm.attributes import flag_modified
 from app.models import Base
 from app.models.bet import Bet
 from app.models.betting_league import BettingLeague
-from app.utils.database import get_db
-from app.config import settings
-from datetime import datetime
 
 
 class User(Base):
@@ -53,6 +50,21 @@ class User(Base):
         flag_modified(self, "gameday_budget")
         db.commit()  # ✅ Now commits correctly
         return True
+
+    def update_points(self, db: Session):
+        user_relevant_bets = (
+            db.query(Bet)
+            .filter(
+                Bet.user_id == self.id, Bet.reward != None, Bet.points_granted == False
+            )
+            .all()
+        )
+        self.points += sum(bet.reward for bet in user_relevant_bets)
+        for bet in user_relevant_bets:
+            bet.points_granted = True
+            db.add(bet)
+            flag_modified(bet, "points_granted")
+        db.commit()
 
     def join_league(self, betting_league: BettingLeague, db: Session):
         if betting_league.id not in self.betting_leagues:

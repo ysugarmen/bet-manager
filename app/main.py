@@ -168,7 +168,7 @@ def fetch_and_store_games(db: Session, target_date: str = None):
     fetch_betting_odds(db)
 
 
-def scheduled_game_updates(db: Session):
+def scheduled_games_and_bets_updates(db: Session):
     while True:
         logger.info("🔄 Running scheduled game update")
 
@@ -185,6 +185,14 @@ def scheduled_game_updates(db: Session):
             )
             for game in relevant_games:
                 game.update_game_state()
+
+            relevant_bets = db.query(Bet).filter(Bet.bet_state != BetState.locked).all()
+            for bet in relevant_bets:
+                bet.update_bet_state(db)
+
+            users = db.query(User).all()
+            for user in users:
+                user.update_points(db)
 
             db.commit()
 
@@ -217,25 +225,30 @@ def startup_tasks():
 
     # ✅ Fetch & store new games
     fetch_and_store_games(db)
-    if not settings.DEBUG_MODE:
-        # ✅ Update all game states
-        relevant_games = (
-            db.query(Game).filter(Game.game_state != GameState.history).all()
-        )
-        for game in relevant_games:
-            game.update_game_state()
+    update_scores_from_web(db)
+    # ✅ Update all game states
+    relevant_games = db.query(Game).filter(Game.game_state != GameState.history).all()
+    for game in relevant_games:
+        game.update_game_state()
 
-        relevant_bets = db.query(Bet).filter(Bet.bet_state != BetState.locked).all()
-        for bet in relevant_bets:
-            bet.update_bet_state(db)
-        logger.info("✅ Startup tasks completed: Games fetched & states updated")
+    relevant_bets = db.query(Bet).filter(Bet.bet_state != BetState.locked).all()
+    for bet in relevant_bets:
+        bet.update_bet_state(db)
+
+    users = db.query(User).all()
+    for user in users:
+        user.update_points(db)
+
+    logger.info(
+        "✅ Startup tasks completed: Games fetched & states updated & all users points updated"
+    )
     db.commit()
     db.close()
 
     # ✅ Start the scheduled updates in a separate thread
     logger.info("⏳ Starting background task for scheduled updates")
     thread = threading.Thread(
-        target=scheduled_game_updates, args=(next(get_db()),), daemon=True
+        target=scheduled_games_and_bets_updates, args=(next(get_db()),), daemon=True
     )
     thread.start()
 

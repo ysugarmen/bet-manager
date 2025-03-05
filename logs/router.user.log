@@ -29,3 +29,8 @@
 2025-02-26 10:58:21 | INFO | User User1 logged in successfully
 2025-02-26 12:35:25 | INFO | User User2 registered successfully
 2025-02-26 12:35:40 | INFO | User User2 logged in successfully
+2025-03-05 13:37:54 | ERROR | Invalid login attempt for user Aa123456
+2025-03-05 13:37:54 | ERROR | Invalid login attempt for user Aa123456
+2025-03-05 13:43:01 | ERROR | Invalid login attempt for user Aa123456
+2025-03-05 13:43:24 | INFO | User User1 logged in successfully
+2025-03-05 15:42:38 | INFO | User User1 logged in successfully
