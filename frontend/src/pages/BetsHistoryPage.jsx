@@ -33,22 +33,26 @@ const BetsHistoryPage = () => {
 
   const fetchRelevantGames = async (bets) => {
     const gameIds = [...new Set(bets.map(bet => bet.game_id))];
+
     try {
       const response = await apiClient.get(`/games/by-ids`, {
-        params: { game_ids: gameIds }, // ✅ Axios automatically converts arrays to `?game_ids=162&game_ids=163`
+        params: { game_ids: gameIds },
         paramsSerializer: (params) => {
-          return new URLSearchParams(params).toString(); // ✅ Ensures correct serialization
+          return params.game_ids.map(id => `game_ids=${id}`).join("&"); // ✅ Correct serialization
         },
       });
+
       const gamesData = response.data.reduce((acc, game) => ({
         ...acc,
         [game.id]: game
       }), {});
+
       setGames(gamesData);
     } catch (error) {
       console.error("Failed to fetch relevant games:", error);
     }
   };
+
 
   return (
     <Box sx={{ display: "flex", width: "100vw", overflowX: "hidden" }}>
