@@ -151,9 +151,9 @@ def fetch_and_store_games(db: Session, target_date: str = None):
         db_game = (
             db.query(Game)
             .filter(
-                (Game.team1 == game.team1)
-                & (Game.team2 == game.team2)
-                & (Game.match_time == game.match_time)
+                Game.team1 == game.team1,
+                Game.team2 == game.team2,
+                Game.match_time == game.match_time,
             )
             .first()
         )
@@ -170,41 +170,25 @@ def fetch_and_store_games(db: Session, target_date: str = None):
 
 def scheduled_games_and_bets_updates(db: Session):
     while True:
-        logger.info("🔄 Running scheduled game update")
+        logger.info("🔄 Running scheduled updates")
 
         try:
-            # Fetch and store new games
-            fetch_and_store_games(db)
-
-            # Update all scores
-            update_scores_from_web(db)
-
-            # Update game states
-            relevant_games = (
-                db.query(Game).filter(Game.game_state != GameState.history).all()
-            )
-            for game in relevant_games:
-                game.update_game_state()
-
-            relevant_bets = db.query(Bet).filter(Bet.bet_state != BetState.locked).all()
-            for bet in relevant_bets:
-                bet.update_bet_state(db)
-
-            users = db.query(User).all()
-            for user in users:
-                user.update_points(db)
+            fetch_and_store_games(db)  # ✅ Fetch new games
+            update_scores_from_web(db)  # ✅ Update missing scores
+            update_game_states(db)  # ✅ Ensure correct game states
+            update_bets_and_calculate_rewards(db)  # ✅ Update bet states & rewards
+            update_user_points(db)  # ✅ Update user points
 
             db.commit()
-
         except Exception as e:
             logger.error(f"❌ Error in scheduled updates: {e}")
 
         finally:
             db.close()
-            db = next(get_db())  # ✅ Refresh the DB session
+            db = next(get_db())  # ✅ Refresh DB session
 
-        logger.info("✅ Scheduled game update completed")
-        time.sleep(6 * 60 * 60)  # ⏳ Wait 6 hours
+        logger.info("✅ Scheduled updates completed")
+        time.sleep(6 * 60 * 60)  # ⏳ Run every 6 hours
 
 
 def init_db():
@@ -213,44 +197,63 @@ def init_db():
 
 @app.on_event("startup")
 def startup_tasks():
-    """
-    Run tasks when the app starts:
-    - Fetch new games
-    - Update game states
-    - Start background task for scheduled updates
-    """
-    logger.info("🚀 Fetching initial games on startup")
+    logger.info("🚀 Running startup tasks")
     init_db()
     db = next(get_db())
 
-    # ✅ Fetch & store new games
-    fetch_and_store_games(db)
-    update_scores_from_web(db)
-    # ✅ Update all game states
-    relevant_games = db.query(Game).filter(Game.game_state != GameState.history).all()
-    for game in relevant_games:
+    fetch_and_store_games(db)  # ✅ Fetch new games
+    update_scores_from_web(db)  # ✅ Update missing scores
+    update_game_states(db)  # ✅ Ensure all games have correct state
+    update_bets_and_calculate_rewards(db)  # ✅ Update bet states & rewards
+    update_user_points(db)  # ✅ Update user points
+
+    logger.info("✅ Startup tasks completed")
+    db.commit()
+    db.close()
+
+    # ✅ Start the scheduled updates in a separate thread
+    logger.info("⏳ Starting background updates")
+    thread = threading.Thread(
+        target=scheduled_games_and_bets_updates, args=(next(get_db()),), daemon=True
+    )
+    thread.start()
+
+
+def update_game_states(db: Session):
+    logger.info("🔄 Updating game states")
+
+    all_games = db.query(Game).all()
+    for game in all_games:
         game.update_game_state()
+
+    db.commit()
+    logger.info("✅ Game states updated")
+
+
+def update_bets_and_calculate_rewards(db: Session):
+    logger.info("🔄 Updating bets and calculating rewards")
 
     relevant_bets = db.query(Bet).filter(Bet.bet_state != BetState.locked).all()
     for bet in relevant_bets:
-        bet.update_bet_state(db)
+        game = db.query(Game).filter(Game.id == bet.game_id).first()
+        if game:
+            bet.update_bet_state(db)  # ✅ Updates bet state
+            if game.game_state == GameState.history and bet.reward is None:
+                bet.calculate_reward(game)  # ✅ Calculate reward if missing
+
+    db.commit()
+    logger.info("✅ Bets updated and rewards calculated")
+
+
+def update_user_points(db: Session):
+    logger.info("🔄 Updating user points")
 
     users = db.query(User).all()
     for user in users:
         user.update_points(db)
 
-    logger.info(
-        "✅ Startup tasks completed: Games fetched & states updated & all users points updated"
-    )
     db.commit()
-    db.close()
-
-    # ✅ Start the scheduled updates in a separate thread
-    logger.info("⏳ Starting background task for scheduled updates")
-    thread = threading.Thread(
-        target=scheduled_games_and_bets_updates, args=(next(get_db()),), daemon=True
-    )
-    thread.start()
+    logger.info("✅ User points updated")
 
 
 logger.info("✅ Bet Manager is ready to go!")

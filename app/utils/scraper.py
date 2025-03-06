@@ -150,11 +150,9 @@ def update_scores_from_web(db: Session, target_date: str = None):
             game = (
                 db.query(Game)
                 .filter(
-                    and_(
-                        Game.team1 == team1,
-                        Game.team2 == team2,
-                        Game.match_time == match_datetime,
-                    )
+                    Game.team1 == team1,
+                    Game.team2 == team2,
+                    Game.match_time == match_datetime,
                 )
                 .first()
             )
