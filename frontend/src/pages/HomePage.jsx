@@ -13,6 +13,7 @@ import {
 import NavbarDrawer from "../components/general/NavbarDrawer";
 import FixturesAndResults from "../components/homePage/FixturesAndResults.jsx";
 import UserPointsDisplay from "../components/homePage/UserPointsDisplay.jsx";
+import LeagueTable from "../components/homePage/LeagueTable.jsx";
 import apiClient from "../api/apiClient.js";
 import { AuthContext } from "../context/AuthContext";
 
@@ -21,25 +22,36 @@ export default function HomePage() {
   const [dates, setDates] = useState([]);
   const [selectedDate, setSelectedDate] = useState("");
   const [loadingDates, setLoadingDates] = useState(true);
+  const [teams, setTeams] = useState([]);
+  const [loadingTeams, setLoadingTeams] = useState(true);
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   useEffect(() => {
     const fetchDates = async () => {
       try {
         const response = await apiClient.get("/games/upcoming/dates");
-        if (response.data?.length > 0) {
-          setDates(response.data);
-          setSelectedDate(response.data[0]);
-        } else {
-          setDates([]);
-        }
+        setDates(response.data?.length > 0 ? response.data : []);
+        setSelectedDate(response.data?.[0] || "");
       } catch (error) {
         console.error("Failed to fetch upcoming dates: ", error);
       } finally {
         setLoadingDates(false);
       }
     };
+
+    const fetchTeams = async () => {
+      try {
+        const response = await apiClient.get("/teams/sorted");  // ✅ Fetch teams
+        setTeams(response.data);
+      } catch (error) {
+        console.error("Failed to fetch teams: ", error);
+      } finally {
+        setLoadingTeams(false);
+      }
+    };
+
     fetchDates();
+    fetchTeams();  // ✅ Call fetchTeams
   }, []);
 
   const handleTabChange = (event, newValue) => {
@@ -94,15 +106,22 @@ export default function HomePage() {
               <Typography variant="h6" sx={{ fontWeight: "bold", color: "#333" }}>
                 Upcoming Matches
               </Typography>
-              {selectedDate && <FixturesAndResults date={selectedDate} />}
+              {selectedDate && <FixturesAndResults date={selectedDate} teams={teams}/>}
             </Paper>
           </Grid>
 
-          {/* Right Section - Leaderboard, Active Bets & Points */}
           <Grid item xs={12} md={4}>
 
             {/* 🎯 Points Display */}
             {user && <UserPointsDisplay userId={user.id} />}
+            {/* 🎯 League Table */}
+            {loadingTeams ? (
+              <Box sx={{ textAlign: "center", mt: 2 }}>
+                <CircularProgress />
+              </Box>
+            ) : (
+              <LeagueTable teams={teams} />  // ✅ Pass teams to LeagueTable
+            )}
 
           </Grid>
         </Grid>

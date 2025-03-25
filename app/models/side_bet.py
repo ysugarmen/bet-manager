@@ -1,4 +1,4 @@
-from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime
+from sqlalchemy import Column, Integer, String, ForeignKey, Enum, DateTime, JSON
 from sqlalchemy.orm import Session
 from app.models import Base
 from app.models.game import Game
@@ -11,15 +11,16 @@ class SideBet(Base):
     __tablename__ = "side_bets"
     id = Column(Integer, primary_key=True, index=True)
     last_time_to_bet = Column(DateTime, nullable=True)
+    time_to_check_answer = Column(DateTime, nullable=True)
     question = Column(String, nullable=False)
-    answer = Column(String, nullable=True)
+    options = Column(JSON, nullable=False)
+    answer = Column(JSON, nullable=True)
     reward = Column(Integer, nullable=False)
     bet_state = Column(Enum(BetState), nullable=False, default=BetState.editable)
 
     def __repr__(self):
         return f"<SideBet(id={self.id}, question={self.question}, answer={self.answer}, reward={self.reward}, bet_state={self.bet_state})>"
 
-    @classmethod
     def update_bet_state(self):
         """
         Updates the bet state based on the user's bet choice and the side bet's answer.
@@ -35,7 +36,7 @@ class UsersSideBet(Base):
     timestamp = Column(DateTime, default=datetime.utcnow)
     user_id = Column(Integer, ForeignKey("users.id"), nullable=False)
     side_bet_id = Column(Integer, nullable=False)
-    bet_choice = Column(String, nullable=False)
+    bet_choice = Column(JSON, nullable=False)
 
     reward = Column(Integer, nullable=True)
 
