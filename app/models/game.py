@@ -10,22 +10,24 @@ class Game(Base):
     __tablename__ = "games"
 
     id = Column(Integer, primary_key=True, index=True)
-    stage = Column(String, nullable=True)
+    stage = Column(String, nullable=True)  # ✅ Used to check if penalties apply
     gameday = Column(Integer, nullable=True)
     team1 = Column(String, nullable=False)
     team2 = Column(String, nullable=False)
     match_time = Column(DateTime, nullable=False)
     game_state = Column(Enum(GameState), nullable=False, default=GameState.upcoming)
-    score_team1 = Column(Integer, nullable=True)  # Null until the game is played
-    score_team2 = Column(Integer, nullable=True)  # Null until the game is played
+
+    score_team1 = Column(Integer, nullable=True)  # Normal time score
+    score_team2 = Column(Integer, nullable=True)  # Normal time score
+
+    penalty_score_team1 = Column(Integer, nullable=True)  # Penalty shootout score
+    penalty_score_team2 = Column(Integer, nullable=True)  # Penalty shootout score
+
     game_winner = Column(String, nullable=True)  # Null until the game is played
 
     team1_odds = Column(Float, nullable=True)
     team2_odds = Column(Float, nullable=True)
     draw_odds = Column(Float, nullable=True)
-
-    # Relationships
-    # bets = relationship("Bet", back_populates="game")
 
     def __repr__(self):
         return (
@@ -77,16 +79,33 @@ class Game(Base):
             return True
         return False
 
-    def detirmine_game_winner(self):
-        """Determine the game result based on the scores."""
+    def determine_game_winner(self):
+        """
+        Determine the game result based on the normal time scores.
+        If the match is in a knockout stage (not "League phase") and ended in a draw,
+        use penalty scores to determine the winner.
+        """
         if self.score_team1 is None or self.score_team2 is None:
             return None
+
+        # ✅ Normal time decision
         if self.score_team1 > self.score_team2:
             return "1"
         if self.score_team2 > self.score_team1:
             return "2"
-        if self.score_team1 == self.score_team2:
-            return "X"
+
+        # ✅ Check for penalty shootout **only if stage is NOT "League phase"**
+        if self.stage and self.stage.lower() != "league phase":
+            if (
+                self.penalty_score_team1 is not None
+                and self.penalty_score_team2 is not None
+            ):
+                if self.penalty_score_team1 > self.penalty_score_team2:
+                    return "1"  # Team1 wins in penalties
+                elif self.penalty_score_team2 > self.penalty_score_team1:
+                    return "2"  # Team2 wins in penalties
+
+        return "X"  # Draw (or penalties not applicable)
 
     def update_game_state(self):
         current_time = datetime.utcnow()
@@ -96,7 +115,7 @@ class Game(Base):
         elif (
             game_starting_time
             < current_time
-            < (game_starting_time + timedelta(minutes=settings.GAME_STANSDART_LENGTH))
+            < (game_starting_time + timedelta(minutes=settings.GAME_STANDART_LENGTH))
         ):
             self.game_state = GameState.ongoing
         else:

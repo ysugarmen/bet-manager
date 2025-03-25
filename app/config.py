@@ -17,6 +17,19 @@ class Settings(BaseSettings):
         "CL_GAMES_SCRAPING_URL",
         "https://fbref.com/en/comps/8/schedule/Champions-League-Scores-and-Fixtures",
     )
+    CL_GENERAL_SCRAPING_URL: str = os.getenv(
+        "CL_GENERAL_SCRAPING_URL",
+        "https://fbref.com/en/comps/8/Champions-League-Stats",
+    )
+    FBREF_BASE_URL: str = os.getenv(
+        "FBREF_BASE_URL",
+        "https://fbref.com",
+    )
+    CL_STATS_SUFIX: str = os.getenv(
+        "CL_STATS_SUFIX",
+        "-Champions-League",
+    )
+
     TEAM_NAME_MAPPING: ClassVar[dict[str, str]] = {
         "Dortmundde": "Borussia Dortmund",
         "deDortmund": "Borussia Dortmund",
@@ -106,7 +119,7 @@ class Settings(BaseSettings):
     LOGO_BASE_PATH: str = (
         "/Users/yonatansugarmen/Desktop/Projects/Apps/BetManager/static/team_logos/"
     )
-    GAME_STANSDART_LENGTH: int = 3
+    GAME_STANDART_LENGTH: int = 3
     BETTING_ODDS_API_URL: str = (
         "https://api.the-odds-api.com/v4/sports/soccer_uefa_champs_league/odds/"
     )

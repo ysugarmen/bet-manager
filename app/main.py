@@ -4,11 +4,12 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles
 from sqlalchemy import inspect
 from sqlalchemy.orm import Session, registry
-from app.routers import user, game, bet, betting_league
+from app.routers import user, game, bet, betting_league, team, side_bet
 from app.models import Base
 from app.models.user import User
 from app.models.game import Game
 from app.models.bet import Bet
+from app.models.side_bet import SideBet
 from app.models.betting_league import BettingLeague
 from app.config import settings
 from app.schemas.game import GameState
@@ -19,6 +20,13 @@ from app.utils.scraper import (
     fetch_games_from_web,
     update_scores_from_web,
     fetch_betting_odds,
+    fetch_teams_from_web,
+    fetch_players_from_web,
+)
+from app.services.side_bet_creation import create_side_bets
+from app.services.side_bets_helper import (
+    update_side_bets_answers,
+    update_users_side_bets_rewards,
 )
 from pathlib import Path
 import time
@@ -92,6 +100,8 @@ app.include_router(user.router, tags=["users"])
 app.include_router(game.router, tags=["games"])
 app.include_router(bet.router, tags=["bets"])
 app.include_router(betting_league.router, tags=["betting_leagues"])
+app.include_router(team.router, tags=["teams"])
+app.include_router(side_bet.router, tags=["side_bets"])
 
 
 # Serve React App
@@ -121,6 +131,8 @@ async def serve_react(full_path: str):
         "betting-leagues",
         "games",
         "bets",
+        "teams",
+        "side-bets",
     ]  # ✅ Add all API prefixes
     if any(full_path.startswith(prefix) for prefix in api_prefixes):
         logger.warning(f"🚨 API path detected in React serve_react: {full_path}")
@@ -178,6 +190,9 @@ def scheduled_games_and_bets_updates(db: Session):
             update_game_states(db)  # ✅ Ensure correct game states
             update_bets_and_calculate_rewards(db)  # ✅ Update bet states & rewards
             update_user_points(db)  # ✅ Update user points
+            update_side_bets_states(db)  # ✅ Update side bets states
+            update_side_bets_answers(db)  # ✅ Update side bets answers
+            update_users_side_bets_rewards(db)  # ✅ Update users side bets rewards
 
             db.commit()
         except Exception as e:
@@ -203,9 +218,15 @@ def startup_tasks():
 
     fetch_and_store_games(db)  # ✅ Fetch new games
     update_scores_from_web(db)  # ✅ Update missing scores
+    fetch_teams_from_web(db)  # ✅ Fetch teams from FBRef
+    fetch_players_from_web(db)  # ✅ Fetch players from FBRef
+    create_side_bets(db)  # ✅ Create side bets
     update_game_states(db)  # ✅ Ensure all games have correct state
     update_bets_and_calculate_rewards(db)  # ✅ Update bet states & rewards
     update_user_points(db)  # ✅ Update user points
+    update_side_bets_states(db)  # ✅ Update side bets states
+    update_side_bets_answers(db)  # ✅ Update side bets answers
+    update_users_side_bets_rewards(db)  # ✅ Update users side bets rewards
 
     logger.info("✅ Startup tasks completed")
     db.commit()
@@ -254,6 +275,17 @@ def update_user_points(db: Session):
 
     db.commit()
     logger.info("✅ User points updated")
+
+
+def update_side_bets_states(db: Session):
+    logger.info("🔄 Updating game states")
+
+    all_side_bets = db.query(SideBet).all()
+    for side_bet in all_side_bets:
+        side_bet.update_bet_state()
+
+    db.commit()
+    logger.info("✅ Side bet states updated")
 
 
 logger.info("✅ Bet Manager is ready to go!")

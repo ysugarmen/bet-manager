@@ -17,7 +17,7 @@ import ChevronLeftIcon from "@mui/icons-material/ChevronLeft";
 import HomeIcon from "@mui/icons-material/Home";
 import MonetizationOnIcon from "@mui/icons-material/MonetizationOn"; // Betting icon
 import ExitToAppIcon from "@mui/icons-material/ExitToApp";
-import TableChartIcon from '@mui/icons-material/TableChart';
+import TableChartIcon from "@mui/icons-material/TableChart";
 import { ExpandLess, ExpandMore } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../context/AuthContext";
@@ -43,7 +43,9 @@ const NavbarDrawer = ({ open, toggleDrawer }) => {
       <AppBar
         position="fixed"
         sx={{
-          width: open ? `calc(100% - ${drawerWidth}px)` : `calc(100% - ${collapsedWidth}px)`,
+          width: open
+            ? `calc(100% - ${drawerWidth}px)`
+            : `calc(100% - ${collapsedWidth}px)`,
           ml: open ? `${drawerWidth}px` : `${collapsedWidth}px`,
           transition: "width 0.3s ease-in-out, margin-left 0.3s ease-in-out",
           backgroundColor: "#042240",
@@ -88,15 +90,30 @@ const NavbarDrawer = ({ open, toggleDrawer }) => {
             <ListItemIcon>
               <HomeIcon />
             </ListItemIcon>
-            <ListItemText primary="Home" sx={{ display: open ? "block" : "none" }} />
+            <ListItemText
+              primary="Home"
+              sx={{ display: open ? "block" : "none" }}
+            />
           </ListItem>
-
+          {/* Side Bets Link */}
+          <ListItem button component={Link} to="/side-bets">
+            <ListItemIcon>
+              <MonetizationOnIcon />
+            </ListItemIcon>
+            <ListItemText
+              primary="Side Bets"
+              sx={{ display: open ? "block" : "none" }}
+            />
+          </ListItem>
           {/* My Bets Section */}
           <ListItem button onClick={handleBetsClick}>
             <ListItemIcon>
               <MonetizationOnIcon />
             </ListItemIcon>
-            <ListItemText primary="My Bets" sx={{ display: open ? "block" : "none" }} />
+            <ListItemText
+              primary="My Bets"
+              sx={{ display: open ? "block" : "none" }}
+            />
             {openBets ? <ExpandLess /> : <ExpandMore />}
           </ListItem>
 
@@ -116,7 +133,10 @@ const NavbarDrawer = ({ open, toggleDrawer }) => {
             <ListItemIcon>
               <TableChartIcon />
             </ListItemIcon>
-            <ListItemText primary="Betting Leagues" sx={{ display: open ? "block" : "none" }} />
+            <ListItemText
+              primary="Betting Leagues"
+              sx={{ display: open ? "block" : "none" }}
+            />
             {openBets ? <ExpandLess /> : <ExpandMore />}
           </ListItem>
 
@@ -128,14 +148,16 @@ const NavbarDrawer = ({ open, toggleDrawer }) => {
             </List>
           </Collapse>
         </List>
-
         {/* Logout Button at the Bottom */}
         <List sx={{ marginTop: "auto" }}>
           <ListItem button onClick={logout}>
             <ListItemIcon>
               <ExitToAppIcon />
             </ListItemIcon>
-            <ListItemText primary="Logout" sx={{ display: open ? "block" : "none" }} />
+            <ListItemText
+              primary="Logout"
+              sx={{ display: open ? "block" : "none" }}
+            />
           </ListItem>
         </List>
       </Drawer>

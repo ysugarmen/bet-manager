@@ -15,11 +15,9 @@ export default function BettingLeagueLandingPage() {
     const navigate = useNavigate();
     const [league, setLeague] = useState(null);
     const [manager, setManager] = useState(null);
-    const [posts, setPosts] = useState([]); // Store posts data
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState(null);
     const [sidebarOpen, setSidebarOpen] = useState(false);
-    const [newPost, setNewPost] = useState(""); // State for new post input
 
     // ✅ Fetch league, leaderboard, and posts data
     const fetchLeagueData = useCallback(async () => {
