@@ -40,33 +40,37 @@ DEFAULT_HEADERS = {
 
 
 def make_request(url, max_retries=5, base_delay=3, max_delay=30):
-    """Makes a request with retry logic to handle rate limiting (429)."""
-    delay = base_delay  # Start with a base delay
+    """Enhanced request with detailed logging for debugging."""
+    delay = base_delay
     for attempt in range(max_retries):
         headers = {**DEFAULT_HEADERS, "User-Agent": random.choice(USER_AGENTS)}
         try:
             response = session.get(url, headers=headers, timeout=10)
+            logger.info(f"Request Headers: {headers}")  # Log headers
+            logger.info(
+                f"Using IP: {requests.get('https://api.ipify.org').text}"
+            )  # Log IP
 
             if response.status_code == 200:
-                return response  # ✅ Success
-            elif response.status_code == 429:  # Rate limit exceeded
-                delay_with_jitter = delay + random.uniform(1, 3)  # Random jitter
+                return response
+            elif response.status_code == 429:
+                delay_with_jitter = delay + random.uniform(1, 3)
                 logger.warning(
-                    f"⏳ Rate limited (429). Retrying in {delay_with_jitter:.1f} seconds..."
+                    f"Rate limited (429). Retrying in {delay_with_jitter:.1f} seconds..."
                 )
                 time.sleep(delay_with_jitter)
-                delay = min(delay * 2, max_delay)  # Exponential backoff (max 60s)
+                delay = min(delay * 2, max_delay)
             else:
-                logger.error(f"❌ Request failed: {response.status_code} ({url})")
-                return None  # No retry for non-429 errors
+                logger.error(f"Request failed: {response.status_code} ({url})")
+                return None
 
         except requests.exceptions.RequestException as e:
-            logger.error(f"❌ Connection error: {e}")
+            logger.error(f"Connection error: {e}")
             time.sleep(delay)
             delay = min(delay * 2, max_delay)
 
-    logger.error(f"🚫 Max retries exceeded for {url}")
-    return None  # Request failed after max retries
+    logger.error(f"Max retries exceeded for {url}")
+    return None
 
 
 import re
