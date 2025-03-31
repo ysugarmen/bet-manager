@@ -103,10 +103,19 @@ class Settings(BaseSettings):
         "Leverkusende": "Bayren Leverkusen",
         "Red Starrs": "Red Star",
         "rsRed Star": "Red Star",
-        "atStrum Graz": "Strum Graz",
-        "Strum Grazat": "Strum Graz",
+        "atSturm Graz": "Strum Graz",
+        "Sturm Grazat": "Strum Graz",
         "frBrest": "Brest",
         "Brestfr": "Brest",
+    }
+    API_TEAM_MAPPING: ClassVar[dict[str, str]] = {
+        "Bayern Munich": "Bayern München",
+        "Sporting CP": "Sporting Lisbon",
+        "VfB Stuttgart": "Stuttgart",
+        "RasenBallsport Leipzig": "RB Leipzig",
+        "FK Crvena Zvezda": "Red Star",
+        "Salzburg": "RB Salzburg",
+        "Bayer Leverkusen": "Bayren Leverkusen",
     }
     STAGE_TO_GAMEDAY_BUDGET_KEY_MAPPING: ClassVar[dict[str, int]] = {
         "League phase": 2,
@@ -128,6 +137,20 @@ class Settings(BaseSettings):
     )
     oauth2_scheme: ClassVar[OAuth2PasswordBearer] = OAuth2PasswordBearer(
         tokenUrl="token"
+    )
+    # Properly annotate these as instance variables
+    LIVE_SCORES_API_KEY: str = os.getenv("LIVE_SCORES_API_KEY", "U0LJksz3oDn591zo")
+    LIVE_SCORES_API_SECRET: str = os.getenv(
+        "LIVE_SCORES_API_SECRET", "Ufo4QAKf0kT2CWRxWDgh5QlutIzDK92F"
+    )
+    LIVE_SCORES_CL_COMP_ID: str = os.getenv("LIVE_SCORES_CL_COMP_ID", "244")
+    LIVE_SCORES_API_HISTORY_ENDPOINT: str = os.getenv(
+        "LIVE_SCORES_API_HISTORY_ENDPOINT",
+        "https://livescore-api.com/api-client/scores/history.json",
+    )
+    LIVE_SCORES_API_FIXTURES_ENDPOINT: str = os.getenv(
+        "LIVE_SCORES_API_FIXTURES_ENDPOINT",
+        "https://livescore-api.com/api-client/fixtures/list.json",
     )
 
 

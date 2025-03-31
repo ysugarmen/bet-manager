@@ -10,6 +10,7 @@ from app.models.betting_league import BettingLeague
 from app.models.team import Team
 from app.models.player import Player
 from app.models.side_bet import SideBet, UsersSideBet
+from app.models.game import Game
 
 # ✅ Ensure metadata is created
 from app.utils.database import engine

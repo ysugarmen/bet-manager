@@ -28,6 +28,7 @@ from app.services.side_bets_helper import (
     update_side_bets_answers,
     update_users_side_bets_rewards,
 )
+from app.utils.api_helper import fecth_and_process_games_data
 from pathlib import Path
 import time
 import threading, os
@@ -185,9 +186,8 @@ def scheduled_games_and_bets_updates(db: Session):
         logger.info("🔄 Running scheduled updates")
 
         try:
-            fetch_and_store_games(db)  # ✅ Fetch new games
-            update_scores_from_web(db)  # ✅ Update missing scores
-            update_game_states(db)  # ✅ Ensure correct game states
+            fecth_and_process_games_data(db)
+            update_game_states(db)  # ✅ Ensure all games have correct state
             update_bets_and_calculate_rewards(db)  # ✅ Update bet states & rewards
             update_user_points(db)  # ✅ Update user points
             update_side_bets_states(db)  # ✅ Update side bets states
@@ -216,12 +216,11 @@ def startup_tasks():
     init_db()
     db = next(get_db())
 
-    fetch_and_store_games(db)  # ✅ Fetch new games
-    update_scores_from_web(db)  # ✅ Update missing scores
+    fecth_and_process_games_data(db)
+    update_game_states(db)  # ✅ Ensure all games have correct state
     fetch_teams_from_web(db)  # ✅ Fetch teams from FBRef
     fetch_players_from_web(db)  # ✅ Fetch players from FBRef
     create_side_bets(db)  # ✅ Create side bets
-    update_game_states(db)  # ✅ Ensure all games have correct state
     update_bets_and_calculate_rewards(db)  # ✅ Update bet states & rewards
     update_user_points(db)  # ✅ Update user points
     update_side_bets_states(db)  # ✅ Update side bets states
@@ -246,7 +245,6 @@ def update_game_states(db: Session):
     all_games = db.query(Game).all()
     for game in all_games:
         game.update_game_state()
-
     db.commit()
     logger.info("✅ Game states updated")
 
