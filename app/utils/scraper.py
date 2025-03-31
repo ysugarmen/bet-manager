@@ -46,11 +46,6 @@ def make_request(url, max_retries=5, base_delay=3, max_delay=30):
         headers = {**DEFAULT_HEADERS, "User-Agent": random.choice(USER_AGENTS)}
         try:
             response = session.get(url, headers=headers, timeout=10)
-            logger.info(f"Request Headers: {headers}")  # Log headers
-            logger.info(
-                f"Using IP: {requests.get('https://api.ipify.org').text}"
-            )  # Log IP
-
             if response.status_code == 200:
                 return response
             elif response.status_code == 429:
